@@ -1,0 +1,228 @@
+﻿
+@{
+    ViewBag.Title = "Gelismis";
+    Layout = "~/Shared/Panel_1.cshtml";
+}
+
+@{
+    if (Convert.ToByte(Session["bilgisayari_varmi"]) != 0)
+    {
+        <div class="page-fixed-main-content">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="portlet light bordered">
+                        <div class="portlet-title">
+                            <div class="caption font-red-sunglo">
+                                <i class="icon-settings font-red-sunglo"></i>
+                                <span class="caption-subject bold uppercase">Hazır Sorgu</span>
+                            </div>
+                        </div>
+                        <div class="portlet-body form">
+                            <div class="form-body">
+                                <div class="form-group">
+                                    <div class=" row">
+                                        <div class=" col-md-6">
+
+                                            <button id="ipconfig" onclick="tek_atimlik(this.id)" class="btn btn-success btn-block ">IP Yapılandırması</button>
+                                            <button id="ipconfig f" onclick="tek_atimlik('ipconfig /flushdns')" class="btn btn-warning btn-block">DNS Önbelleğini Boşalt</button>
+                                            <button id="help" onclick="tek_atimlik(this.id)" class="btn btn-success btn-block"><span class="font-red">(eklenecek)</span>Bilgisayarı Kilitle</button>
+                                            <button id="ping 8.8.8.8" onclick="tek_atimlik(this.id)" class="btn btn-warning btn-block">Google Dns Ping</button>
+                                        </div>
+                                        <div class=" col-md-6">
+                                            <button id="shutdown -r -f -t 1" onclick="tek_atimlik(this.id)" class="btn btn-success btn-block">Bilgisayarı Yeniden Başlat</button>
+                                            <button id="shutdown -s -f -t 1" onclick="tek_atimlik(this.id)" class="btn btn-warning btn-block">Bilgisayarı Kapat</button>
+                                            <button id="netstat" onclick="tek_atimlik(this.id)" class="btn btn-success btn-block">Gelen-Giden Bağlantı Listesi</button>
+
+                                        </div>
+                                    </div>
+                                    @*@Html.ActionLink("Panel", "Ekran_yakala",new { par= "ekran_yakala" })*@
+                                </div>
+                                <div class="form-group">
+
+                                </div>
+                                <div class="form-group col-md-6">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Uygulama Kur-->
+                    <div class="portlet light bordered">
+                        <div class="portlet-title">
+                            <div class="caption font-red-sunglo">
+                                <i class="icon-social-dropbox font-red-sunglo"></i>
+                                <span class="caption-subject bold uppercase">Uygulama Yükle</span>
+                            </div>
+                        </div>
+                        <div class="portlet-body form">
+                            <div class="form-body">
+                                <div class="form-group">
+                                    <div class=" row">
+                                        <div class=" col-md-6">
+
+                                            <button id="Winrar64.msi" onclick="yukle(this.id)" class="btn btn-success btn-block ">Winrar Yükle</button>
+
+                                        </div>
+                                        <div class=" col-md-6">
+                                            <button id="Adobe_ps_cc" onclick="yukle(this.id)" class="btn btn-success btn-block">Adobe Photoshop CC 2017</button>
+
+
+                                        </div>
+                                    </div><br />
+                                        <div class="row">
+                                            <div class=" col-md-6">
+                                                <button id="CCleaner.exe" onclick="yukle(this.id)" class="btn btn-success btn-block">CCleaner</button>
+
+
+                                            </div>
+                                            <div class=" col-md-6">
+                                                <button id="x.jpg" onclick="yukle(this.id)" class="btn btn-success btn-block">Hazır Görsel</button>
+
+
+                                            </div>
+                                        </div>
+                                   
+                                    @*@Html.ActionLink("Panel", "Ekran_yakala",new { par= "ekran_yakala" })*@
+                                </div>
+                                <div class="form-group">
+
+                                </div>
+                                <div class="form-group col-md-6">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--CMD CIKTILARI OZELSORGU-->
+                </div>
+                <div class="col-md-6">
+                    <div class="portlet light bordered">
+                        <div class="portlet-title">
+                            <div class="caption font-red-sunglo">
+                                <i class="icon-settings font-red-sunglo"></i>
+                                <span class="caption-subject bold uppercase">Özel Sorgu</span>
+                            </div>
+                        </div>
+                        <div class="portlet-body form">
+                            <div class="form-body">
+                                <div class="form-group">
+
+                                    <label class="control-label font-blue-hoki">Sorgu</label>
+                                    <textarea id="maxlength_textarea" class="form-control" maxlength="225" rows="2" placeholder="Maksimum 225 karakter gir" style="margin: 0px 41px 0px 0px; height: 100px; "></textarea>
+                                    @*<a href="@Url.Action("is_kaydi","Panel",new {gorev=7})" class="btn blue btn-block" style="margin-top:15px;">Çalıştır</a>*@
+                                    <button class="btn btn-success btn-block" onclick="calistir()" style="margin-top:15px;" id="sorgu_yolla">Çalıştır</button>
+                                    <br />Çıktı:<br /><br />
+                                    <textarea id="cikti" class="form-control" rows="10" style="margin: 0px 41px 0px 0px;" disabled></textarea>
+
+                                </div>
+                                <div class="form-group">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script src="~/Panel_CSS/assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            var zamanlayici;
+
+            function tek_atimlik(sorgu) {
+                $.ajax({
+                    url: '/Panel/is_kaydi/',
+                    type: 'GET',
+                    data: { gorev: 7, yol: sorgu },
+                    dataType: 'json',
+                    success: function (data) {
+                        toastr.success('islem basarılı');
+
+                    }
+                });
+                toastr["success"]("Bilgisayar aktif olduğunda işleminiz gerçekleşecek.!", "İşlem Kaydedildi..");
+                document.getElementById("sorgu_yolla").disabled = true;
+                document.getElementById("ipconfig").disabled = true;
+                document.getElementById("ipconfig f").disabled = true;
+                document.getElementById("help").disabled = true;
+                document.getElementById("ping 8.8.8.8").disabled = true;
+                document.getElementById("shutdown -r -f -t 1").disabled = true;
+                document.getElementById("shutdown -s -f -t 1").disabled = true;
+                document.getElementById("netstat").disabled = true;
+                zamanlayici = self.setInterval("sorgu_doldur_()", 5000);
+            };
+
+
+            function calistir() {
+                var val = document.getElementById('maxlength_textarea').value;
+
+                $.ajax({
+                    url: '/Panel/is_kaydi/',
+                    type: 'GET',
+                    data: { gorev: 7, yol: val },
+                    dataType: 'json',
+                    success: function (data) {
+                        toastr.success('islem basarılı');
+
+                    }
+                });
+                toastr["success"]("Bilgisayar aktif olduğunda işleminiz gerçekleşecek.!", "İşlem Kaydedildi..");
+                document.getElementById("sorgu_yolla").disabled = true;
+                document.getElementById("ipconfig").disabled = true;
+                document.getElementById("ipconfig f").disabled = true;
+                document.getElementById("help").disabled = true;
+                document.getElementById("ping 8.8.8.8").disabled = true;
+                document.getElementById("shutdown -r -f -t 1").disabled = true;
+                document.getElementById("shutdown -s -f -t 1").disabled = true;
+                document.getElementById("netstat").disabled = true;
+                zamanlayici = self.setInterval("sorgu_doldur_()", 5000);
+            };
+
+            function sorgu_doldur_() {
+
+                $.ajax({
+                    type: 'GET',
+                    url: '/Panel/sorgu_doldur/',
+                    dataType: 'JSON',
+                    success: function (data) {
+                        if (data == "relogin") {
+                            window.location = "/Panel"
+                        } else if (data == "Bekleniyor!") {
+                            document.getElementById('cikti').innerHTML = data;
+                        } else {
+                            clearInterval(zamanlayici);
+                            document.getElementById('cikti').innerHTML = data;
+                            document.getElementById("sorgu_yolla").disabled = false;
+                            document.getElementById("ipconfig").disabled = false;
+                            document.getElementById("ipconfig f").disabled = false;
+                            document.getElementById("help").disabled = false;
+                            document.getElementById("ping 8.8.8.8").disabled = false;
+                            document.getElementById("shutdown -r -f -t 1").disabled = false;
+                            document.getElementById("shutdown -s -f -t 1").disabled = false;
+                            document.getElementById("netstat").disabled = false;
+                        }
+                    }
+                });
+            };
+
+            function yukle(uygulama_Adi) {
+               
+                $.ajax({
+                    type: 'GET',
+                    url: '/Panel/is_kaydi/',
+                    data: { gorev: 9,yol: uygulama_Adi},
+                    dataType: 'JSON',
+                    success: function (data) {
+                        alert(data);
+                    }
+
+                });  
+            };
+        </script>
+
+
+    }
+    else
+    {
+        <h1 class="text-center">Bilgisayar Eklediğinizde Aktif Olacağız</h1>
+    }
+}

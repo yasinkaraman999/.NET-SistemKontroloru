@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4a2a8d10-f9ef-492b-a93d-af443158db96" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:60079/Sistem_Kontroloru_Servis_01.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Sistem_Kontroloru_Servis_014.xsd" MetadataType="Schema" ID="8f5bc551-e3aa-420c-a869-fc4f02bdf4c0" SourceId="1" SourceUrl="http://localhost:60079/Sistem_Kontroloru_Servis_01.svc?xsd=xsd0" />
+    <MetadataFile FileName="Sistem_Kontroloru_Servis_011.disco" MetadataType="Disco" ID="4d05e5c8-0a12-4502-9adc-158b8ab09e94" SourceId="1" SourceUrl="http://localhost:60079/Sistem_Kontroloru_Servis_01.svc?disco" />
+    <MetadataFile FileName="Sistem_Kontroloru_Servis_0141.xsd" MetadataType="Schema" ID="3e536963-5d8e-4921-814f-5f28efc3ec9e" SourceId="1" SourceUrl="http://localhost:60079/Sistem_Kontroloru_Servis_01.svc?xsd=xsd1" />
+    <MetadataFile FileName="Sistem_Kontroloru_Servis_011.wsdl" MetadataType="Wsdl" ID="72291387-0789-4be5-b8fe-83376e5457d8" SourceId="1" SourceUrl="http://localhost:60079/Sistem_Kontroloru_Servis_01.svc?wsdl" />
+    <MetadataFile FileName="Sistem_Kontroloru_Servis_0142.xsd" MetadataType="Schema" ID="43492cf3-4f8a-4de8-b160-5ab07bed2469" SourceId="1" SourceUrl="http://localhost:60079/Sistem_Kontroloru_Servis_01.svc?xsd=xsd2" />
+    <MetadataFile FileName="Sistem_Kontroloru_Servis_0143.xsd" MetadataType="Schema" ID="5d17b18c-cd50-4401-ab46-32b90467eb57" SourceId="1" SourceUrl="http://localhost:60079/Sistem_Kontroloru_Servis_01.svc?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,385 @@
+﻿@using Web_App_SistemKontroloru.Models;
+
+
+
+@{
+                /**/
+
+                ViewBag.Title = "Index";
+                Layout = null;
+                //Genel Kullanım//
+                admin_WebApp_DatabaseEntities db = new admin_WebApp_DatabaseEntities();
+
+                rapor_genel_data_model temp_genel_data = TempData["rapor_genel_temp_data_item"] as rapor_genel_data_model;
+
+                List<rapor_genel_data_model> rapor_data_app_list = TempData["rapor_data_app_list"] as List<rapor_genel_data_model>;
+
+                PC_Details rapor_pc_inf_temp_data = TempData["rapor_pc_inf_temp_data"] as PC_Details;
+
+}
+
+@{
+    if (Convert.ToByte(Session["bilgisayari_varmi"]) != 0)
+    {
+        <html>
+        <head>
+            <title>Rapor</title>
+            <link href="~/Panel_CSS/Print_Comp/bootstrap.min.css" rel="stylesheet" />
+        </head>
+        <body>
+
+            <div class="container-fluid block">
+                <div class="page-fixed-main-content">
+
+                    <div class="row">
+
+                        <div class="col-md-6">
+
+                            <img src="~/Web_CSS/logo/raporLogo .png" class="card-img-top" style="width:60%;" />
+
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card ">
+                                <ul>
+                                    <li>
+                                        <span>Domain&User Name :  <span style="font-size:18px;">@rapor_pc_inf_temp_data.Domain_User_Name</span></span>
+                                    </li>
+                                    <li>
+                                        <span>OS Version :  <span style="font-size:18px;">@rapor_pc_inf_temp_data.Version_</span></span>
+                                    </li>
+                                    <li>
+                                        <span>Processor :  <span style="font-size:18px;">@rapor_pc_inf_temp_data.Processor_Name</span></span>
+                                    </li>
+                                    <li>
+                                        <span>Memory(GB):  <span style="font-size:18px;">@rapor_pc_inf_temp_data.Memory_Size_Gb</span></span>
+                                    </li>
+                                    <li>
+                                        <span>Motherboard:  <span style="font-size:18px;">@rapor_pc_inf_temp_data.Motherboard_Info</span></span>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id="icerik">
+                        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+                        <div class="portlet light bordered">
+                            <div class="portlet-title">
+                                <div class="caption font-red-sunglo">
+                                    <i class="icon-settings font-blue"></i>
+                                    <span class="caption-subject font-blue bold uppercase">Genel Kullanım</span>
+                                </div>
+                            </div>
+                            <div class="portlet-body form" style="height:250px;">
+                                <div class="form-body">
+
+                                    <div class="form-group row" style="height:250px;">
+                                        <div class=" col-md-9">
+                                            <div id="genel_kullanim_cpu" style="height:250px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portlet light bordered">
+                            <div class="portlet-title">
+                                <div class="caption font-red-sunglo">
+                                    <i class="icon-settings font-blue"></i>
+                                    <span class="caption-subject font-blue bold uppercase">Genel Kullanım</span>
+                                </div>
+                            </div>
+                            <div class="portlet-body form" style="height:250px;">
+                                <div class="form-body">
+                                    <div class="form-group row" style="height:250px;">
+                                        <div class=" col-md-9">
+                                            <div id="genel_kullanim_ram" style="height:250px;width:100%;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portlet light bordered">
+                            <div class="portlet-title">
+                                <div class="caption font-red-sunglo">
+                                    <i class="icon-settings font-blue"></i>
+                                    <span class="caption-subject font-blue bold uppercase">Genel Kullanım</span>
+                                </div>
+                            </div>
+                            <div class="portlet-body form" style="height:250px;">
+                                <div class="form-body">
+                                    <div class="form-group row" style="height:250px;">
+                                        <div class=" col-md-9">
+                                            <div id="genel_kullanim_disk" style="height:250px;width:100%;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portlet light bordered">
+                            <div class="portlet-title">
+                                <div class="caption font-red-sunglo">
+                                    <i class="icon-settings font-blue"></i>
+                                    <span class="caption-subject font-blue bold uppercase">Uygulama Kullanım</span>
+                                </div>
+                            </div>
+                            <div class="portlet-body form">
+                                <div class="form-body">
+
+                                    <div class="form-group row" style="height:350px;">
+
+                                        <!-- Uygulama Kullanım -->
+                                        <div class=" col-md-4">
+                                            <div id="uygulama_kullanim_cpu" style="height:350px;"></div>
+                                        </div>
+                                        <div class=" col-md-4">
+                                            <div id="uygulama_kullanim_ram" style="height:350px;"></div>
+                                        </div>
+                                        <div class=" col-md-4">
+                                            <div id="uygulama_kullanim_disk" style="height:350px;"></div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="table">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Tür</th>
+                                                <th scope="col">Cpu(%)</th>
+                                                <th scope="col">Bellek(MB)</th>
+                                                <th scope="col">Network(Mbps)</th>
+                                                <th scope="col">Disk(Mb)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+                                            <tr>
+                                                <th scope="row">Sistem</th>
+                                                <td>@temp_genel_data.sys_cpu</td>
+                                                <td>@temp_genel_data.sys_ram</td>
+                                                <td>@temp_genel_data.sys_net</td>
+                                                <td>@temp_genel_data.sys_disk</td>
+
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="table">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">İşlem Adı</th>
+                                                <th scope="col">Cpu(%)</th>
+                                                <th scope="col">Bellek(MB)</th>
+                                                <th scope="col">Network(Mbps)</th>
+                                                <th scope="col">Disk(Mb)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (var item in rapor_data_app_list)
+                                            {
+                                                <tr>
+                                                    <th scope="row">@item.process_name</th>
+                                                    <td>@item.sys_cpu</td>
+                                                    <td>@item.sys_ram</td>
+                                                    <td>@item.sys_net</td>
+                                                    <td>@item.sys_disk</td>
+                                                </tr>
+                                            }
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <script>
+
+                    window.onload = function () {
+                           /*cpu*/
+                        var chart = new CanvasJS.Chart("genel_kullanim_cpu", {
+	                    theme: "light1", // "light1", "light2", "dark1", "dark2"
+                            animationEnabled: false,
+                            title: {
+                                fontSize: 20,
+                                text: "Genel CPU Kullanımı(%)"
+                            },
+                            axisY: {
+                                title: "Yüzde",
+                                suffix: "%"
+                            },
+	                    data: [{
+                            type: "line",
+                            name: "CPU Utilization",
+                            connectNullData: true,
+                            //nullDataLineDashType: "solid",
+                            xValueType: "dateTime",
+                            xValueFormatString: "DD MMM hh:mm TT",
+                            yValueFormatString: "#,##0.##\"%\"",
+		                    dataPoints: @Html.Raw(TempData["js_data__sys_cpu"])
+	                    }]
+                    });
+                        chart.render();
+
+                         /*ram*/
+
+                        var chart = new CanvasJS.Chart("genel_kullanim_ram", {
+	                    theme: "light1", // "light1", "light2", "dark1", "dark2"
+                            animationEnabled: false,
+	                    zoomEnabled: true,
+                            title: {
+                                fontSize: 20,
+		                    text: "Genel Bellek Kullanımı(MB)"
+                            },
+                            axisY: {
+                                title: "Megabayt",
+                                suffix: "MB"
+                            },
+	                    data: [{
+                            type: "line",
+                            name: "CPU Utilization",
+                            connectNullData: true,
+                            //nullDataLineDashType: "solid",
+                            xValueType: "dateTime",
+                            xValueFormatString: "DD MMM hh:mm TT",
+                            yValueFormatString: "#,##0.##\"MB\"",
+		                    dataPoints: @Html.Raw(TempData["js_data__sys_ram"])
+	                    }]
+                    });
+
+                        chart.render();
+                     /*disk*/
+                        var chart = new CanvasJS.Chart("genel_kullanim_disk", {
+	                    theme: "light1", // "light1", "light2", "dark1", "dark2"
+	                    animationEnabled: false,
+	                    zoomEnabled: true,
+                            title: {
+                                fontSize: 20,
+		                    text: "Genel Disk Kullanımı(MB)"
+                            },
+                            axisY: {
+                                title: "Megabayt",
+                                suffix: "MB"
+                            },
+	                    data: [{
+                            type: "line",
+                            name: "CPU Utilization",
+                            connectNullData: true,
+                            //nullDataLineDashType: "solid",
+                            xValueType: "dateTime",
+                            xValueFormatString: "DD MMM hh:mm TT",
+                            yValueFormatString: "#,##0.##\"%\"",
+		                    dataPoints: @Html.Raw(TempData["js_data__sys_disk"])
+	                    }]
+                    });
+
+                        chart.render();
+                    }
+                    /*Uygulama Kyullanım*/
+
+                    /*APP CPU*/
+                    var chart = new CanvasJS.Chart("uygulama_kullanim_cpu", {
+                        animationEnabled: false,
+                        title: {
+                            text: "Uygulama bazlı CPU kullanımı (%)"
+                        },
+                        data: [{
+                            type: "pie",
+                            startAngle: 240,
+                            yValueFormatString: "##0.00\"%\"",
+                            indexLabel: "{label} {y}",
+                            dataPoints:@Html.Raw(TempData["js_data__app_cpu"])
+                        }]
+                    });
+                    chart.render();
+
+
+                    /*APP RAM*/
+                    var chart = new CanvasJS.Chart("uygulama_kullanim_ram", {
+                        animationEnabled: false,
+                        title: {
+                            text: "Uygulama bazlı RAM kullanımı (MB)"
+                        }, axisY: {
+                            title: "Megabayt(MB)"
+                        },
+                        data: [{
+                            type: "column",
+                            showInLegend: true,
+                            legendMarkerColor: "grey",
+                            legendText: "MMbbl = one million barrels",
+                            yValueFormatString: "##0.00\"MB\"",
+                            dataPoints:@Html.Raw(TempData["js_data__app_ram"])
+                        }]
+                    });
+                    chart.render();
+
+
+                    /*APP DISK*/
+                    var chart = new CanvasJS.Chart("uygulama_kullanim_disk", {
+                        animationEnabled: false,
+                        title: {
+                            text: "Uygulama bazlı Disk kullanımı (MB)"
+                        }, axisY: {
+                            title: "Megabayt(MB)"
+                        },
+                        data: [{
+                            type: "column",
+                            showInLegend: true,
+                            legendMarkerColor: "grey",
+                            legendText: "MMbbl = one million barrels",
+                            yValueFormatString: "##0.000\"MB\"",
+                            dataPoints:@Html.Raw(TempData["js_data__app_disk"])
+                        }]
+                    });
+                    chart.render();
+
+                        </script>
+
+                        <script src="~/Panel_CSS/Print_Comp/jquery-1.8.0.js"></script>
+                        <script src="~/Panel_CSS/Print_Comp/printThis.js"></script>
+                        <!-- END PAGE BASE CONTENT -->
+                    </div>
+                    <a id="kapatbtn" href="#" onclick="kapat_trigger()"></a>
+                    <script>
+                        $(document).ready(function () {
+                            window.print();
+                            window.setInterval(function () {
+                                $("#kapatbtn").trigger("click");
+                            }, 5000);
+                        });
+
+                        function kapat_trigger() {
+                            window.location = "http://localhost:60079/Panel";
+                        };
+                    </script>
+                </div>
+            </div>
+        </body>
+    </html>
+
+}
+else
+{
+    <h1 class="text-center">Bilgisayar Eklediğinizde Aktif Olacağız</h1>
+}
+
+
+}
+

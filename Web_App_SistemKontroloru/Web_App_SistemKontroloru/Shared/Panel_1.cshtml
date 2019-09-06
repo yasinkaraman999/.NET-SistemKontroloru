@@ -1,0 +1,542 @@
+﻿@using Web_App_SistemKontroloru.Models;
+
+
+@{
+    admin_WebApp_DatabaseEntities db = new admin_WebApp_DatabaseEntities();
+    <!DOCTYPE html>
+    <html lang="en">
+    <head runat="server">
+        <asp:ContentPlaceHolder ID="head" runat="server">
+        </asp:ContentPlaceHolder>
+        <meta charset="utf-8" />
+        <title>Sistem Kontrolörü v1 | Powered BYKRMN</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta content="Preview page of Metronic Admin Theme #6 for statistics, charts, recent events and reports" name="description" />
+        <meta content="" name="author" />
+        <!-- BEGIN LAYOUT FIRST STYLES -->
+        <link href="//fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet" type="text/css" />
+        <!-- END LAYOUT FIRST STYLES -->
+        <link href="~/Panel_CSS/assets/apps/css/inbox.css" rel="stylesheet" />
+        <!-- BEGIN GLOBAL MANDATORY STYLES -->
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+        <link href="~/Panel_CSS/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="~/Panel_CSS/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="~/Panel_CSS/assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="~/Panel_CSS/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
+        <!-- END GLOBAL MANDATORY STYLES -->
+        <link href="~/Panel_CSS/assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css" rel="stylesheet" type="text/css" />
+        <!-- BEGIN PAGE LEVEL PLUGINS -->
+        <link href="~/Panel_CSS/assets/global/plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" type="text/css" />
+        <link href="~/Panel_CSS/assets/global/plugins/jquery-multi-select/css/multi-select.css" rel="stylesheet" type="text/css" />
+        <link href="~/Panel_CSS/assets/global/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+        <link href="~/Panel_CSS/assets/global/plugins/select2/css/select2-bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <!-- END PAGE LEVEL PLUGINS -->
+        <link href="~/Panel_CSS/assets/global/plugins/bootstrap-modal/css/bootstrap-modal-bs3patch.css" rel="stylesheet" type="text/css">
+        <link href="~/Panel_CSS/assets/global/plugins/bootstrap-modal/css/bootstrap-modal.css" rel="stylesheet" type="text/css">
+        <!-- BEGIN PAGE LEVEL PLUGINS -->
+        <link href="~/Panel_CSS/assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.css" rel="stylesheet" type="text/css" />
+        <link href="~/Panel_CSS/assets/global/plugins/morris/morris.css" rel="stylesheet" type="text/css" />
+        <link href="~/Panel_CSS/assets/global/plugins/fullcalendar/fullcalendar.min.css" rel="stylesheet" type="text/css" />
+        <link href="~/Panel_CSS/assets/global/plugins/jqvmap/jqvmap/jqvmap.css" rel="stylesheet" type="text/css" />
+        <!-- END PAGE LEVEL PLUGINS -->
+        <!-- BEGIN THEME GLOBAL STYLES -->
+        <link href="~/Panel_CSS/assets/global/css/components-md.min.css" rel="stylesheet" id="style_components" type="text/css" />
+        <link href="~/Panel_CSS/assets/global/css/plugins-md.min.css" rel="stylesheet" type="text/css" />
+        <!-- END THEME GLOBAL STYLES -->
+        <!-- BEGIN THEME LAYOUT STYLES -->
+        <link href="~/Panel_CSS/assets/layouts/layout6/css/layout.min.css" rel="stylesheet" type="text/css" />
+        <link href="~/Panel_CSS/assets/layouts/layout6/css/custom.min.css" rel="stylesheet" type="text/css" />
+        <link href="~/Panel_CSS/assets/Ligtbox/lightbox.css" rel="stylesheet" type="text/css" />
+        <link href="~/Panel_CSS/assets/global/plugins/datatables/datatables.min.css" rel="stylesheet" type="text/css" />
+        <link href="~/Panel_CSS/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css" rel="stylesheet" type="text/css" />
+        <link href="~/Panel_CSS/assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" rel="stylesheet" type="text/css" />
+        <link href="~/Panel_CSS/assets/global/plugins/bootstrap-toastr/toastr.min.css" rel="stylesheet" type="text/css" />
+        <!-- END THEME LAYOUT STYLES -->
+        <link rel="shortcut icon" href="favicon.ico" />
+    </head>
+    <!-- END HEAD -->
+
+    <body class="page-md">
+
+        <!-- BEGIN HEADER -->
+        <header class="page-header">
+            <nav class="navbar" role="navigation">
+                <div class="container-fluid">
+                    <div class="havbar-header">
+                        <!-- BEGIN LOGO -->
+                        <a id="index" class="navbar-brand" href="start.html" style="background-color:white;">
+                            <img src="~/Web_CSS/logo/logomini.png" alt="Logo">
+                        </a>
+
+                        @{
+                            if (Convert.ToByte(Session["bilgisayari_varmi"]) != 0 && Session["Current_PC_Hw_id"] != null)
+                            {
+                                string temp_hw = Session["Current_PC_Hw_id"].ToString();
+                                List<PC_Details> temp_list = Session["PC_Detail"] as List<PC_Details>;
+                                PC_Details temp_list_item = temp_list.Where(x => x.Hardware_Id == temp_hw).FirstOrDefault();
+                                <span class="navbar-brand">
+                                    <span style="color:#009dc7;">Inf:&nbsp;</span><span style="color:white;font-size:13px;">@temp_list_item.Version_</span>
+                                    <span style="color:#009dc7;font-size:22px;">/</span><span style="color:white;font-size:13px;">@temp_list_item.Domain_User_Name</span>
+                                    <span style="color:#009dc7;font-size:22px;">/</span><span style="color:white;font-size:13px;">Cpu : @temp_list_item.Processor_Name</span>
+                                    <span style="color:#009dc7;font-size:22px;">/</span><span style="color:white;font-size:13px;">Bellek :@temp_list_item.Memory_Size_Gb GB</span>
+                                    <span style="color:#009dc7;font-size:22px;">/</span><span style="color:white;font-size:13px;">Anakart : @temp_list_item.Motherboard_Info</span>
+                                </span>
+                            }
+                        }
+
+
+                        <div class="topbar-actions">
+                            <div class="btn-group-notification btn-group" id="header_notification_bar">
+                                <button type="button" class="btn md-skip dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                    <span class="badge bg-after-blue">PC</span>
+                                </button>
+                                <ul class="dropdown-menu-v2">
+                                    <li>
+                                        <ul class="dropdown-menu-list scroller" style="height: 250px; padding: 0;" data-handle-color="#637283">
+                                            @{
+
+
+                                                if (Convert.ToByte(Session["bilgisayari_varmi"]) != 0 && Session["Current_PC_Hw_id"] != null)
+                                                {
+
+                                                    foreach (var item in Session["PC_Detail"] as List<PC_Details>)
+                                                    {
+                                                        <li>
+                                                            <a href="/Panel/pc_degistir?pc_hw_id=@item.Hardware_Id">
+                                                                <span class="details">
+                                                                    <span class="label label-sm label-icon @{ if (item.Online == true) { string durum = "label-success"; @durum; } else { string durum = "label-danger"; @durum; } } md-skip">
+                                                                        <i class="fa fa-wifi"></i>
+                                                                    </span>@item.Hardware_Id
+                                                                </span>
+                                                                <span class="time">
+                                                                    @{ if (item.Online == true)
+                                                                        {
+                                                                            string durum = "Açık"; @durum;
+                                                                        }
+                                                                        else
+                                                                        {
+                                                                            string durum = "Kapalı"; @durum;
+                                                                        } }
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                    }
+                                                }
+                                                else
+                                                {
+                                                    Session["pc_varmi"] = false;
+
+                                                    <li>
+                                                        <a href="javascript:;">
+                                                            <span class="details">
+                                                                Mesaj:     Ekli Bilgisayar Yok!
+                                                            </span>
+
+                                                        </a>
+                                                    </li>
+                                                }
+                                            }
+
+
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- DOC: Apply "search-form-expanded" right after the "search-form" class to have half expanded search box -->
+                            <form class="search-form" action="extra_search.html" method="GET">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search here" name="query">
+                                    <span class="input-group-btn">
+                                        <a href="javascript:;" class="btn md-skip submit">
+                                            <i class="fa fa-search"></i>
+                                        </a>
+                                    </span>
+                                </div>
+                            </form>
+                            <!-- END HEADER SEARCH BOX -->
+                            <!-- BEGIN GROUP NOTIFICATION -->
+                            <!-- END GROUP NOTIFICATION -->
+                            <!-- BEGIN USER PROFILE -->
+                            <div class="btn-group-img btn-group">
+                                <button type="button" class="btn btn-sm dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                    <img src="~/Panel_CSS/assets/layouts/layout5/img/avatar1.jpg" alt="">
+                                </button>
+                                <ul class="dropdown-menu-v2" role="menu">
+                                    <li>
+                                        <a href="page_user_profile_1.html">
+                                            <i class="icon-user"></i>My Profile
+                                            <span class="badge badge-danger">1</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="app_calendar.html">
+                                            <i class="icon-calendar"></i>My Calendar
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="app_inbox.html">
+                                            <i class="icon-envelope-open"></i>My Inbox
+                                            <span class="badge badge-danger">3 </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="app_todo_2.html">
+                                            <i class="icon-rocket"></i>My Tasks
+                                            <span class="badge badge-success">7 </span>
+                                        </a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="page_user_lock_1.html">
+                                            <i class="icon-lock"></i>Lock Screen
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/Panel/Cikis">
+                                            <i class="icon-key"></i>Log Out
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- END USER PROFILE -->
+                        </div>
+                        <!-- END TOPBAR ACTIONS -->
+                    </div>
+                </div>
+                <!--/container-->
+            </nav>
+        </header>
+        <!-- END HEADER -->
+        <!-- BEGIN CONTAINER -->
+        <div class="container-fluid">
+            <div class="page-content page-content-popup">
+                <div class="page-content-fixed-header">
+                    <!-- BEGIN BREADCRUMBS -->
+                    <ul class="page-breadcrumb">
+                        <li>
+                            <a href="#">Dashboard</a>
+                        </li>
+                        <li>Sistem Kontrolörü</li>
+                    </ul>
+                    <!-- END BREADCRUMBS -->
+                    <div class="content-header-menu">
+                        <!-- BEGIN DROPDOWN AJAX MENU -->
+                        <div class="dropdown-ajax-menu btn-group">
+                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                <i class="fa fa-circle"></i>
+                                <i class="fa fa-circle"></i>
+                                <i class="fa fa-circle"></i>
+                            </button>
+                            <ul class="dropdown-menu-v2">
+                                <li>
+                                    <a href="start.html">Application</a>
+                                </li>
+                                <li>
+                                    <a href="start.html">Reports</a>
+                                </li>
+                                <li>
+                                    <a href="start.html">Templates</a>
+                                </li>
+                                <li>
+                                    <a href="start.html">Settings</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- END DROPDOWN AJAX MENU -->
+                        <!-- BEGIN MENU TOGGLER -->
+                        <button type="button" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="toggle-icon">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </span>
+                        </button>
+                        <!-- END MENU TOGGLER -->
+                    </div>
+                </div>
+                @{
+                    if (Convert.ToByte(Session["bilgisayari_varmi"]) != 0)
+                    {
+                        <div class="page-sidebar-wrapper">
+                            <div class="page-sidebar navbar-collapse collapse">
+                                <ul class="page-sidebar-menu  page-header-fixed " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+                                    <li class="nav-item start active open">
+                                        <a href="/Panel" class="nav-link nav-toggle">
+                                            <i class="icon-home"></i>
+                                            <span class="title">İzleme</span>
+                                            <span class="selected"></span>
+                                        </a>
+                                    </li>
+                                    <li class="heading">
+                                        <h3 class="uppercase">YÖNETİM</h3>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/Panel/TemelKontrol" class="nav-link nav-toggle">
+                                            <i class="icon-diamond"></i>
+                                            <span class="title">
+                                                Temel Kontrol
+                                            </span>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="/Panel/Yasaklar" class="nav-link nav-toggle">
+                                            <i class="icon-puzzle"></i>
+                                            <span class="title">Yasaklar</span>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="/Panel/EkranYakala" class="nav-link nav-toggle">
+                                            <i class="icon-settings"></i>
+                                            <span class="title">Ekran Yakala</span>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="/Panel/UygulamaBaslat" class="nav-link nav-toggle">
+                                            <i class="icon-bulb"></i>
+                                            <span class="title">Uygulama Başlat</span>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="/Panel/TarayiciGecmisi" class="nav-link nav-toggle">
+                                            <i class="icon-briefcase"></i>
+                                            <span class="title">Tarayıcı Geçmişi</span>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="/Panel/Gelismis" class="nav-link nav-toggle">
+                                            <i class="icon-wallet"></i>
+                                            <span class="title">Gelişmiş</span>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a href="javascript:;" class="nav-link nav-toggle">
+                                            <i class="fa fa-print"></i>
+                                            <span class="title">Rapor</span>
+                                            <span class="arrow"></span>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li class="nav-item  ">
+                                                <a href="~/Panel/Rapor/0" class="nav-link ">
+                                                    <i class="icon-clock"></i>
+                                                    <span class="title">Tüm Zamanlar</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item  ">
+                                                <a href="~/Panel/Rapor/7" class="nav-link ">
+                                                    <i class="icon-clock"></i>
+                                                    <span class="title">Son 1 Hafta</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item  ">
+                                                <a href="~/Panel/Rapor/30" class="nav-link ">
+                                                    <i class="icon-clock"></i>
+                                                    <span class="title">Son 1 Ay</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item  ">
+                                                <a href="~/Panel/Rapor/180" class="nav-link ">
+                                                    <i class="icon-clock"></i>
+                                                    <span class="title">Son 6 Ay</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item  ">
+                                                <a href="~/Panel/Rapor/360" class="nav-link ">
+                                                    <i class="icon-clock"></i>
+                                                    <span class="title">Son 12 Ay</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        @*<a href="/Panel/TopluMesajGonder" class="nav-link nav-toggle">
+                                                <i class="icon-speech"></i>
+                                                <span class="title">Toplu Mesaj Gönder</span>
+                                                <span class="arrow"></span>
+                                            </a>*@
+
+
+                                        <a class="form-control" data-target="#stack1" data-toggle="modal">
+                                            <i class="icon-speech"></i>
+                                            <span class="title">Toplu Mesaj Gönder</span>
+                                            <span class="arrow"></span>
+                                        </a>
+
+                                        <div id="stack1" class="modal fade" tabindex="-1" data-focus-on="input:first">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                                <h4 class="modal-title">Toplu Mesaj Gönder</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p> Mesaj </p>
+                                                <div class="form-group">
+                                                    <input type="text" id="mesaj" class="form-control" data-tabindex="1" height="2" maxlength="250" />
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button onclick="TopluMesajGonder()" class="btn green" data-dismiss="modal">Gonder</button>
+
+                                            </div>
+                                        </div>
+
+                                    </li>
+
+                                </ul>
+                                <!-- END SIDEBAR MENU -->
+                            </div>
+                            <!-- END SIDEBAR -->
+                        </div>
+                    }
+
+                }
+
+                <!--Render Body -->
+                @RenderBody()
+
+
+
+
+
+                <!-- BEGIN FOOTER -->
+                <p class="copyright-v2">
+                    2019 &copy; Powered
+                    <a target="_blank" href="http://yasinkaramanonline.com">BYKRMN</a> &nbsp;|&nbsp;Tüm hakları saklıdır
+
+                </p>
+                <a href="#index" class="go2top">
+                    <i class="icon-arrow-up"></i>
+                </a>
+                <!-- END FOOTER -->
+            </div>
+        </div>
+        <!-- Mesaj Modal-->
+        <!--[if lt IE 9]>
+        <script src="~/Panel_CSS/assets/global/plugins/respond.min.js"></script>
+        <script src="~/Panel_CSS/assets/global/plugins/excanvas.min.js"></script>
+        <script src="~/Panel_CSS/assets/global/plugins/ie8.fix.min.js"></script>
+        <![endif]-->
+        <!-- BEGIN CORE PLUGINS -->
+        <script src="~/Panel_CSS/assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+        <script src="~/Panel_CSS/assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="~/Panel_CSS/assets/global/plugins/js.cookie.min.js" type="text/javascript"></script>
+        <script src="~/Panel_CSS/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+        <script src="~/Panel_CSS/assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+        <script src="~/Panel_CSS/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+        <!-- END CORE PLUGINS -->
+        <script src="~/Panel_CSS/assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.js" type="text/javascript"></script>
+        <script src="~/Panel_CSS/assets/global/plugins/jquery.sparkline.min.js" type="text/javascript"></script>
+        <!-- BEGIN PAGE LEVEL PLUGINS -->
+        <script src="~/Panel_CSS/assets/global/plugins/moment.min.js" type="text/javascript"></script>
+        <script src="~/Panel_CSS/assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.js" type="text/javascript"></script>
+        <script src="~/Panel_CSS/assets/global/plugins/morris/morris.min.js" type="text/javascript"></script>
+        <script src="~/Panel_CSS/assets/global/plugins/morris/raphael-min.js" type="text/javascript"></script>
+        <script src="~/Panel_CSS/assets/global/plugins/counterup/jquery.waypoints.min.js" type="text/javascript"></script>
+
+        <script src="~/Panel_CSS/assets/global/plugins/fullcalendar/fullcalendar.min.js" type="text/javascript"></script>
+        <script src="~/Panel_CSS/assets/global/plugins/horizontal-timeline/horizontal-timeline.js" type="text/javascript"></script>
+        <script src="~/Panel_CSS/assets/global/plugins/flot/jquery.flot.min.js" type="text/javascript"></script>
+        <script src="~/Panel_CSS/assets/global/plugins/flot/jquery.flot.resize.min.js" type="text/javascript"></script>
+        <script src="~/Panel_CSS/assets/global/plugins/flot/jquery.flot.categories.min.js" type="text/javascript"></script>
+        <script src="~/Panel_CSS/assets/global/plugins/jquery-easypiechart/jquery.easypiechart.min.js" type="text/javascript"></script>
+        <script src="~/Panel_CSS/assets/global/plugins/jquery.sparkline.min.js" type="text/javascript"></script>
+        <script src="~/Panel_CSS/assets/global/plugins/jqvmap/jqvmap/jquery.vmap.js" type="text/javascript"></script>
+        <script src="~/Panel_CSS/assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.russia.js" type="text/javascript"></script>
+        <script src="~/Panel_CSS/assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.world.js" type="text/javascript"></script>
+        <script src="~/Panel_CSS/assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.europe.js" type="text/javascript"></script>
+        <script src="~/Panel_CSS/assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.germany.js" type="text/javascript"></script>
+        <script src="~/Panel_CSS/assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.usa.js" type="text/javascript"></script>
+        <script src="~/Panel_CSS/assets/global/plugins/jqvmap/jqvmap/data/jquery.vmap.sampledata.js" type="text/javascript"></script>
+        <!-- END PAGE LEVEL PLUGINS -->
+        <!-- BEGIN THEME GLOBAL SCRIPTS -->
+        <script src="~/Panel_CSS/assets/global/plugins/bootstrap-modal/js/bootstrap-modalmanager.js" type="text/javascript"></script>
+        <script src="~/Panel_CSS/assets/global/plugins/bootstrap-modal/js/bootstrap-modal.js" type="text/javascript"></script>
+        <script src="~/Panel_CSS/assets/global/scripts/app.min.js" type="text/javascript"></script>
+        <!-- END THEME GLOBAL SCRIPTS -->
+        <!-- BEGIN PAGE LEVEL PLUGINS -->
+        <script src="~/Panel_CSS/assets/global/plugins/bootstrap-select/js/bootstrap-select.min.js" type="text/javascript"></script>
+        <script src="~/Panel_CSS/assets/global/plugins/jquery-multi-select/js/jquery.multi-select.js" type="text/javascript"></script>
+        <script src="~/Panel_CSS/assets/global/plugins/select2/js/select2.full.min.js" type="text/javascript"></script>
+        <script src="~/Panel_CSS/assets/pages/scripts/components-multi-select.min.js" type="text/javascript"></script>
+        <!-- END PAGE LEVEL PLUGINS -->
+        <script src="~/Panel_CSS/assets/pages/scripts/components-select2.min.js" type="text/javascript"></script>
+        <!-- BEGIN PAGE LEVEL SCRIPTS -->
+        <script src="~/Panel_CSS/assets/pages/scripts/dashboard.min.js" type="text/javascript"></script>
+        <!-- END PAGE LEVEL SCRIPTS -->
+        <script src="~/Panel_CSS/assets/pages/scripts/profile.min.js" type="text/javascript"></script>
+        <!-- BEGIN THEME LAYOUT SCRIPTS -->
+        <script src="~/Panel_CSS/assets/layouts/layout6/scripts/layout.min.js" type="text/javascript"></script>
+        <script src="~/Panel_CSS/assets/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
+        <script src="~/Panel_CSS/assets/layouts/global/scripts/quick-nav.min.js" type="text/javascript"></script>
+        <script src="~/Panel_CSS/assets/Ligtbox/lightbox.js" type="text/javascript"></script>
+        <script src="~/Panel_CSS/assets/global/plugins/bootstrap-select/js/bootstrap-select.min.js" type="text/javascript"></script>
+        <script src="~/Panel_CSS/assets/global/scripts/datatable.js" type="text/javascript"></script>
+        <script src="~/Panel_CSS/assets/global/plugins/datatables/datatables.min.js" type="text/javascript"></script>
+        <script src="~/Panel_CSS/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.js" type="text/javascript"></script>
+        <script src="~/Panel_CSS/assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js" type="text/javascript"></script>
+        <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+        <script src="~/Panel_CSS/assets/pages/scripts/ui-toastr.min.js" type="text/javascript"></script>
+        <script src="~/Panel_CSS/assets/global/plugins/bootstrap-toastr/toastr.min.js" type="text/javascript"></script>
+        <script src="~/Panel_CSS/assets/global/plugins/bootbox/bootbox.min.js" type="text/javascript"></script>
+        <script src="~/Panel_CSS/assets/pages/scripts/ui-bootbox.min.js" type="text/javascript"></script>
+        <script src="~/Panel_CSS/assets/pages/scripts/components-date-time-pickers.min.js" type="text/javascript"></script>
+        <!-- END THEME LAYOUT SCRIPTS -->
+        <script>
+            $(document).ready(function () {
+                $('#clickmewow').click(function () {
+                    $('#radio1003').attr('checked', 'checked');
+                });
+            });
+
+            $(".search").keyup(function () {
+                var searchTerm = $(".search").val();
+                var bulunan = 0
+                $('.results tbody tr').each(function (e) {
+                    var table = $(this)
+                    if (table.text().toLowerCase().includes(searchTerm.toLowerCase())) {
+                        bulunan += 1
+                        table.show()
+                        $(".counter").text(bulunan + " kayıt bulundu")
+                        $(".no-result").css('display', 'none')
+                    } else {
+                        table.hide()
+                        $(".counter").text(bulunan + " kayıt bulundu")
+                        if (bulunan == 0) {
+                            $(".no-result").css('display', '')
+                        }
+                    }
+                })
+            });
+
+            function TopluMesajGonder() {
+                var val = $("#mesaj").val();
+                $.ajax({
+                    url: '/Panel/TopluMesajGonder/',
+                    type: 'GET',
+                    data: { mesaj: val },
+                    dataType: 'json',
+                    success: function (data) {
+                        if (data == 1) {
+                            toastr["success"]("Bilgisayar aktif olduğunda işleminiz gerçekleşecek.Uygulama tablodan kalkana kadar ekleme yapmayınız!", "Mesaj Gönderildi.");
+                        } else {
+                            toastr["error"]("Mesaj istenilen ölçütleri karşılamıyor yada bir hata var!", "Mesaj Gönderilemedi.");
+                        }
+
+                    }
+                });
+                // toastr["success"]("Bilgisayar aktif olduğunda işleminiz gerçekleşecek.Uygulama tabloda gözükene kadar ekleme yapmayınız!", "Yasak Eklendi.");
+
+            };
+        </script>
+    </body>
+
+</html>
+
+
+
+}

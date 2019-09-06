@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="36db815b81cc4be6a77cfc18620b043a" Name="Diagram1">
+        <EntityTypeShape EntityType="admin_WebApp_DatabaseModel.PC_Running_Apps" Width="1.5" PointX="0.875" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="admin_WebApp_DatabaseModel.Screen_Capture" Width="1.5" PointX="2.25" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="admin_WebApp_DatabaseModel.Screen_Record" Width="1.5" PointX="9" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="admin_WebApp_DatabaseModel.sysdiagrams" Width="1.5" PointX="5" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="admin_WebApp_DatabaseModel.User_Details" Width="1.5" PointX="4" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="admin_WebApp_DatabaseModel.Browser_Histories" Width="1.5" PointX="10.75" PointY="3.125" />
+        <EntityTypeShape EntityType="admin_WebApp_DatabaseModel.Banned_App" Width="1.5" PointX="10.75" PointY="0.5" />
+        <EntityTypeShape EntityType="admin_WebApp_DatabaseModel.PC_App_Locations" Width="1.5" PointX="2.25" PointY="0.5" />
+        <EntityTypeShape EntityType="admin_WebApp_DatabaseModel.cmd_output_" Width="1.5" PointX="12.5" PointY="0.5" />
+        <EntityTypeShape EntityType="admin_WebApp_DatabaseModel.System_Usage" Width="1.5" PointX="7.25" PointY="3.125" />
+        <EntityTypeShape EntityType="admin_WebApp_DatabaseModel.App_Usage" Width="1.625" PointX="0.5" PointY="0.5" />
+        <EntityTypeShape EntityType="admin_WebApp_DatabaseModel.PC_Details" Width="1.5" PointX="8.875" PointY="0.5" />
+        <EntityTypeShape EntityType="admin_WebApp_DatabaseModel.Work_Order" Width="1.5" PointX="5.625" PointY="0.5" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

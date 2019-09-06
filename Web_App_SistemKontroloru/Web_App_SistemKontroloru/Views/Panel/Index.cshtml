@@ -1,0 +1,441 @@
+﻿@using Web_App_SistemKontroloru.Models;
+
+
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Shared/Panel_1.cshtml";
+    //Genel Kullanım//
+    admin_WebApp_DatabaseEntities db = new admin_WebApp_DatabaseEntities();
+
+    //string hwid = Session["Current_PC_Hw_id"].ToString();
+    //DateTime seven_day = DateTime.Now.AddDays(-8);
+    //long seven_day_count = db.System_Usage.Where(x => x.Hardware_Id == hwid && x.Datetime_ >= seven_day).Count();
+    //var x_c = db.System_Usage.Where(x => x.Hardware_Id == hwid && x.Datetime_ >= seven_day).Sum(x => x.Cpu / seven_day_count);
+    //var x_m = db.System_Usage.Where(x => x.Hardware_Id == hwid && x.Datetime_ >= seven_day
+    //var x_c = db.System_Usage.Where(x => x.Hardware_Id == hwid && x.Datetime_ >= seven_day).Sum(x => x.Cpu / seven_day_count);
+
+
+}
+
+@{
+    if (Convert.ToInt32(Session["bilgisayari_varmi"]) != 0 && Session["Current_PC_Hw_id"]!=null)
+    {
+
+        <div class="page-fixed-main-content">
+
+            <div class="row" id="icerik">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="dashboard-stat2 bordered">
+                        <div class="display">
+                            <div class="number">
+                                <h3 class="font-green-sharp" style="font-size:20px;">
+                                    <span style="font-size:20px;">Maks. Cpu Kullanım:</span>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="progress-info">
+                            <div class="progress">
+                                <span style="width:  @TempData["max_sys_cpu"].ToString()%;" class="progress-bar progress-bar-success green-sharp">
+                                    <span class="sr-only">@TempData["max_sys_cpu"].ToString()% progress</span>
+                                </span>
+                            </div>
+                            <div class="status">
+                                <div class="status-title"> Genel </div>
+                                <div class="status-number"> @TempData["max_sys_cpu"].ToString()% </div>
+                            </div>
+                        </div>
+                        <div class="progress-info">
+                            <div class="progress">
+                                <span style="width: @TempData["max_app_cpu"]%;" class="progress-bar progress-bar-success green-sharp">
+                                    <span class="sr-only">@TempData["max_app_cpu"]% progress</span>
+                                </span>
+                            </div>
+                            <div class="status">
+                                <div class="status-title"> @TempData["max_app_cpu_process_name"] </div>
+                                <div class="status-number"> @Math.Round(Convert.ToDouble(TempData["max_app_cpu"]), 2)% </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="dashboard-stat2 bordered">
+                        <div class="display">
+                            <div class="number">
+                                <h3 class="font-red-haze" style="font-size:20px;">
+                                    <span data-counter="counterup">Maks. Bellek Kullanım:</span>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="progress-info">
+                            <div class="progress">
+                                <span style="width: 100%;" class="progress-bar progress-bar-success red-haze">
+
+                                </span>
+                            </div>
+                            <div class="status">
+                                <div class="status-title"> Genel </div>
+                                <div class="status-number"> @Math.Round(Convert.ToDouble(TempData["max_sys_ram"]), 3) MB </div>
+                            </div>
+                        </div>
+                        <div class="progress-info">
+                            <div class="progress">
+                                <span style="width: 85%;" class="progress-bar progress-bar-success red-haze">
+                                    <span class="sr-only">85% change</span>
+                                </span>
+                            </div>
+                            <div class="status">
+                                <div class="status-title"> @TempData["max_app_ram_process_name"] </div>
+                                <div class="status-number">@Math.Round(Convert.ToDouble(TempData["max_app_ram"]), 3) MB </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="dashboard-stat2 bordered">
+                        <div class="display">
+                            <div class="number">
+                                <h3 class="font-blue-sharp" style="font-size:20px;">
+                                    <span data-counter="counterup">Maks. Ağ Kullanım:</span>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="progress-info">
+                            <div class="progress">
+                                <span style="width: 100%;" class="progress-bar progress-bar-success blue-sharp">
+                                </span>
+                            </div>
+                            <div class="status">
+                                <div class="status-title"> Genel </div>
+                                <div class="status-number"> @TempData["max_sys_disk"] MB ayarsız  </div>
+                            </div>
+                        </div>
+                        <div class="progress-info">
+                            <div class="progress">
+                                <span style="width: 100%;" class="progress-bar progress-bar-success blue-sharp">
+                                </span>
+                            </div>
+                            <div class="status">
+                                <div class="status-title"> Uygulama </div>
+                                <div class="status-number"> @TempData["max_app_disk"] MB ayarsız </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="dashboard-stat2 bordered">
+                        <div class="display">
+                            <div class="number">
+                                <h3 class="font-purple-soft" style="font-size:20px;">
+                                    <span data-counter="counterup">Maks. Disk Kullanım:</span>
+                                </h3>
+                            </div>
+
+                        </div>
+                        <div class="progress-info">
+                            <div class="progress">
+                                <span style="width: 100%;" class="progress-bar progress-bar-success purple-soft">
+
+                                </span>
+                            </div>
+                            <div class="status">
+                                <div class="status-title"> Genel </div>
+                                <div class="status-number"> @TempData["max_sys_disk"] MB  </div>
+                            </div>
+                        </div>
+                        <div class="progress-info">
+                            <div class="progress">
+                                <span style="width: 100%;" class="progress-bar progress-bar-success purple-soft">
+                                </span>
+                            </div>
+                            <div class="status">
+                                <div class="status-title"> Uygulama </div>
+                                <div class="status-number"> @Math.Round(Convert.ToDouble(TempData["max_app_disk"]), 2)  MB  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+
+                <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+                <form action="/Panel/Index" method="post">
+                    <div class="portlet light bordered">
+                        <div class="portlet-title">
+
+                            <div class="col-md-6">
+                                <i class="icon-settings font-blue"></i>
+                                <span class="caption-subject font-blue bold uppercase" style="font-size:22px;">
+                                    Genel Kullanım(
+                                    <span style="font-size:15px;color:black;">
+                                        @if (TempData["Gosterilen_Aralik_System"] != null)
+                                        {
+                                            @TempData["Gosterilen_Aralik_System"]
+                                        }
+                                        else
+                                        {
+                                            string ad = "Tüm Zamanlar"; @ad}
+                                    </span> )
+                                </span>
+                            </div>
+                            <div class="col-md-6 col-md-push-2" style="margin-top:-5px;">
+                                <div class="input-group input-large date-picker input-daterange pull-left" data-date="01/01/2019" data-date-format="mm/dd/yyyy">
+                                    <input type="text" class="form-control" name="baslangic"  placeholder="Seç">
+                                    <span class="input-group-addon"> to </span>
+                                    <input type="text" class="form-control" name="bitis"  placeholder="Seç">
+                                </div>   &nbsp;&nbsp;   &nbsp;
+                                <button type="submit" class="btn btn-success">Göster</button>
+                                &nbsp;
+
+                            </div>
+                            <div class="col-md-3 push-right " style="margin-top:-5px;">
+
+                            </div>
+
+                        </div>
+                        <div class="portlet-body form">
+                            <div class="form-body">
+
+                                <div class="form-group " style="height:350px;">
+                                    <div class=" col-md-4">
+                                        <div id="genel_kullanim_cpu" style="height:350px;">
+                                        </div>
+                                    </div>
+
+                                    <div class=" col-md-4">
+                                        <div id="genel_kullanim_ram" style="height:350px;">
+                                        </div>
+                                    </div>
+                                    <div class=" col-md-4">
+                                        <div id="genel_kullanim_disk" style="height:350px;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="portlet light bordered">
+                        <div class="portlet-title">
+
+                            <div class="col-md-6">
+                                <i class="icon-settings font-blue"></i>
+                                <span class="caption-subject font-blue bold uppercase" style="font-size:22px;">
+                                    Uygulama Kullanım(
+                                    <span style="font-size:15px;color:black;">
+                                        @if (TempData["Gosterilen_Aralik_App"] != null)
+                                        {
+                                            @TempData["Gosterilen_Aralik_App"]
+                                        }
+                                        else
+                                        {
+                                            string ad = "Tüm Zamanlar"; @ad}
+                                    </span> )
+                                </span>
+                            </div>
+                            <div class="col-md-6 col-md-push-2" style="margin-top:-5px;">
+                                <div class="input-group input-large date-picker input-daterange pull-left" data-date="01/01/2019" data-date-format="mm/dd/yyyy">
+                                    <input type="text" class="form-control" name="baslangic_app"  placeholder="Seç">
+                                    <span class="input-group-addon"> to </span>
+                                    <input type="text" class="form-control" name="bitis_app"  placeholder="Seç">
+                                </div>   &nbsp;&nbsp;   &nbsp;
+                                <button type="submit" class="btn btn-success">Göster</button>
+                                &nbsp;
+
+                            </div>
+                            <div class="col-md-3 push-right " style="margin-top:-5px;">
+
+                            </div>
+
+                        </div>
+                        <div class="portlet-body form">
+                            <div class="form-body">
+
+                                <div class="form-group " style="height:350px;">
+
+                                    <!-- Uygulama Kullanım -->
+                                    <div class=" col-md-4">
+                                        <div id="uygulama_kullanim_cpu" style="height:350px;"></div>
+                                    </div>
+                                    <div class=" col-md-4">
+                                        <div id="uygulama_kullanim_ram" style="height:350px;"></div>
+                                    </div>
+                                    <div class=" col-md-4">
+                                        <div id="uygulama_kullanim_disk" style="height:350px;"></div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <script>
+
+
+
+                    window.onload = function () {
+                           /*cpu*/
+                        var chart = new CanvasJS.Chart("genel_kullanim_cpu", {
+	                    theme: "light1", // "light1", "light2", "dark1", "dark2"
+                            animationEnabled: true,
+                            title: {
+                                fontSize: 20,
+                                text: "Genel CPU Kullanımı(%)"
+                            },
+                            axisY: {
+                                title: "Yüzde",
+                                suffix: "%"
+                            },
+	                    data: [{
+                            type: "line",
+                            name: "CPU Utilization",
+                            connectNullData: true,
+                            //nullDataLineDashType: "solid",
+                            xValueType: "dateTime",
+                            xValueFormatString: "DD MMM hh:mm TT",
+                            yValueFormatString: "#,##0.##\"%\"",
+		                    dataPoints: @Html.Raw(TempData["js_data__sys_cpu"])
+	                    }]
+                    });
+                        chart.render();
+
+                         /*ram*/
+
+                        var chart = new CanvasJS.Chart("genel_kullanim_ram", {
+	                    theme: "light1", // "light1", "light2", "dark1", "dark2"
+	                    animationEnabled: true,
+	                    zoomEnabled: true,
+                            title: {
+                                fontSize: 20,
+		                    text: "Genel Bellek Kullanımı(MB)"
+                            },
+                            axisY: {
+                                title: "Megabayt",
+                                suffix: "MB"
+                            },
+	                    data: [{
+                            type: "line",
+                            name: "CPU Utilization",
+                            connectNullData: true,
+                            //nullDataLineDashType: "solid",
+                            xValueType: "dateTime",
+                            xValueFormatString: "DD MMM hh:mm TT",
+                            yValueFormatString: "#,##0.##\"MB\"",
+		                    dataPoints: @Html.Raw(TempData["js_data__sys_ram"])
+	                    }]
+                    });
+
+                        chart.render();
+                     /*disk*/
+                        var chart = new CanvasJS.Chart("genel_kullanim_disk", {
+	                    theme: "light1", // "light1", "light2", "dark1", "dark2"
+	                    animationEnabled: true,
+	                    zoomEnabled: true,
+                            title: {
+                                fontSize: 20,
+		                    text: "Genel Disk Kullanımı(MB)"
+                            },
+                            axisY: {
+                                title: "Megabayt",
+                                suffix: "MB"
+                            },
+	                    data: [{
+                            type: "line",
+                            name: "CPU Utilization",
+                            connectNullData: true,
+                            //nullDataLineDashType: "solid",
+                            xValueType: "dateTime",
+                            xValueFormatString: "DD MMM hh:mm TT",
+                            yValueFormatString: "#,##0.##\"%\"",
+		                    dataPoints: @Html.Raw(TempData["js_data__sys_disk"])
+	                    }]
+                    });
+
+                        chart.render();
+                    }
+                    /*Uygulama Kyullanım*/
+
+                    /*APP CPU*/
+                    var chart = new CanvasJS.Chart("uygulama_kullanim_cpu", {
+                        animationEnabled: true,
+                        title: {
+                            text: "Uygulama bazlı CPU kullanımı (%)"
+                        },
+                        data: [{
+                            type: "pie",
+                            startAngle: 240,
+                            yValueFormatString: "##0.00\"%\"",
+                            indexLabel: "{label} {y}",
+                            dataPoints:@Html.Raw(TempData["js_data__app_cpu"])
+                        }]
+                    });
+                    chart.render();
+
+
+                    /*APP RAM*/
+                    var chart = new CanvasJS.Chart("uygulama_kullanim_ram", {
+                        animationEnabled: true,
+                        title: {
+                            text: "Uygulama bazlı RAM kullanımı (MB)"
+                        }, axisY: {
+                            title: "Megabayt(MB)"
+                        },
+                        data: [{
+                            type: "column",
+                            showInLegend: true,
+                            legendMarkerColor: "grey",
+                            legendText: "MMbbl = one million barrels",
+                            yValueFormatString: "##0.00\"MB\"",
+                            dataPoints:@Html.Raw(TempData["js_data__app_ram"])
+                        }]
+                    });
+                    chart.render();
+
+
+                    /*APP DISK*/
+                    var chart = new CanvasJS.Chart("uygulama_kullanim_disk", {
+                        animationEnabled: true,
+                        title: {
+                            text: "Uygulama bazlı Disk kullanımı (MB)"
+                        }, axisY: {
+                            title: "Megabayt(MB)"
+                        },
+                        data: [{
+                            type: "column",
+                            showInLegend: true,
+                            legendMarkerColor: "grey",
+                            legendText: "MMbbl = one million barrels",
+                            yValueFormatString: "##0.000\"MB\"",
+                            dataPoints:@Html.Raw(TempData["js_data__app_disk"])
+                        }]
+                    });
+                    chart.render();
+
+                </script>
+
+
+                <br />
+
+        </div>
+        <ul>
+
+            <li>@*Math.Round(Convert.ToDouble(x_c), 1) % ||@Math.Round(Convert.ToDouble(x_m), 1) % ||*@ </li>
+
+
+        </ul>
+
+        <!-- END PAGE BASE CONTENT -->
+        </div>
+
+    }
+    else
+    {
+        <h1 class="text-center">Bilgisayar Eklediğinizde Aktif Olacağız</h1>
+    }
+
+
+}
+

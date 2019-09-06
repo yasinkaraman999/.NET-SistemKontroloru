@@ -1,0 +1,84 @@
+﻿@using Web_App_SistemKontroloru.Models;
+
+@{
+    /**/
+
+    ViewBag.Title = "EkranYakala";
+    Layout = "~/Shared/Panel_1.cshtml";
+    admin_WebApp_DatabaseEntities db = new admin_WebApp_DatabaseEntities();
+
+
+
+}
+
+@{
+    if (Convert.ToByte(Session["bilgisayari_varmi"]) != 0)
+    {
+        string hw_id = Session["Current_PC_Hw_id"].ToString();
+        <div class="page-fixed-main-content">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="portlet light bordered">
+                        <div class="portlet-title">
+                            <div class="caption font-red-sunglo">
+                                <i class="icon-settings font-red-sunglo"></i>
+                                <span class="caption-subject bold uppercase">Ekran Fotografi</span>
+                            </div>
+                        </div>
+                        <div class="portlet-body form">
+                            <div class="form-body">
+                                <div class="form-group">
+                                    <a href="@Url.Action("is_kaydi", "Panel", new { gorev = 1 })" class="btn blue btn-block">Ekran Yakala</a>
+                                    @*@Html.ActionLink("Panel", "Ekran_yakala",new { par= "ekran_yakala" })*@
+                                </div>
+                                <div class="form-group">
+                                    @foreach (var item in db.Screen_Capture.Where(x => x.Hardware_Id == hw_id).OrderByDescending(x => x.id).ToList())
+                                    {
+                                        <a href="~/@item.Img_Url" data-lightbox="roadtrip" class="btn btn-outline blue" style="margin-top:5px;margin-right:10px;;width:48%;">
+                                            <img src="~/@item.Img_Url" style="width:100%;margin-top:2px;" />
+                                        </a>
+                                    }
+                                </div>
+                                <div class="form-group col-md-6">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="portlet light bordered">
+                        <div class="portlet-title">
+                            <div class="caption font-red-sunglo">
+                                <i class="icon-settings font-red-sunglo"></i>
+                                <span class="caption-subject bold uppercase">Video Kaydı</span>
+                            </div>
+                        </div>
+                        <div class="portlet-body form">
+                            <div class="form-body">
+                                <div class="form-group">
+                                    <a href="@Url.Action("is_kaydi", "Panel", new { gorev = 2 })" class="btn blue btn-block">Ekran Kaydı</a>
+                                </div>
+                                <div class="form-group">
+                                    @foreach (var item in db.Screen_Record.Where(x => x.Hardware_Id == hw_id).OrderByDescending(x => x.id).ToList())
+                                    {
+                                        <video controls class="btn btn-outline blue" style="margin-top:5px;margin-right:10px;;width:48%;">
+                                            <source src="~/@item.Video_Url" type="video/mp4" style="width:100%;margin-top:2px;">
+                                        </video>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    }
+    else
+    {
+        <h1 class="text-center">Bilgisayar Eklediğinizde Aktif Olacağız</h1>
+    }
+}

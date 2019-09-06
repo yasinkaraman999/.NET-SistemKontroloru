@@ -1,0 +1,132 @@
+﻿
+@{
+    ViewBag.Title = "UygulamaBaslat";
+    Layout = "~/Shared/Panel_1.cshtml";
+    @model Tuple<List<Web_App_SistemKontroloru.Models.PC_App_Locations>, List<Web_App_SistemKontroloru.Models.PC_Running_Apps>>
+
+}
+
+@{
+    if (Convert.ToByte(Session["bilgisayari_varmi"]) != 0)
+    {
+        <div class="page-fixed-main-content">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="portlet light bordered">
+                        <div class="portlet-title">
+                            <div class="caption font-green-dark">
+                                <i class="icon-settings font-green"></i>
+                                <span class="caption-subject bold uppercase">Uygulama Başlat</span>
+                            </div>
+                        </div>
+                        <div class="portlet-body form">
+                            <div class="form-body">
+                                <div class="form-group">
+                                    <span> Uygulama Seç</span><br /><br />
+                                    <select class="btn btn-primary btn-block form-control" id="uyg_ac">
+                                        @foreach (var item in Model.Item1)
+                                        {
+                                            <option value="@item.Folder_">@item.App_Name.Substring(0, item.App_Name.Length - 4)</option>
+                                        }
+                                    </select> <br />
+                                    <br />
+                                    <button onclick="baslat()" class="btn blue left">Başlat</button><br />
+                                </div>
+                                <div class="form-group col-md-6">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="portlet light bordered">
+                        <div class="portlet-title">
+                            <div class="caption font-red-sunglo">
+
+                                <span class="caption-subject bold uppercase">
+                                    <i class="icon-settings font-red-sunglo"></i>&nbsp;&nbsp; Sonlandır
+                                </span>
+                                <button onclick="uygulama_sonlandir_liste()" class="btn blue left">Yenile</button>
+                            </div>
+                        </div>
+                        <div class="portlet-body form">
+                            <div class="form-body">
+                                <div class="form-group">
+                                    <span> Uygulama Seç</span><br /><br />
+                                    <select class="btn btn-primary btn-block form-control" id="uyg_sonlandir">
+                                        @foreach (var item in Model.Item2)
+                                        {
+                                            <option value="@item.Name_">@item.Title_</option>
+                                        }
+                                    </select> <br />
+                                    <br /> 
+                                    <button onclick="sonlandir()" class="btn blue left">Sonlandır</button><br />
+                                </div>
+                                <div class="form-group">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        @* toaster w3 den kurulacak *@
+
+        <script type="text/javascript">
+            function baslat() {
+                var val = $("#uyg_ac").val();
+                $.ajax({
+                    url: '/Panel/is_kaydi/',
+                    type: 'GET',
+                    data: { gorev: 3, yol: val },
+                    dataType: 'json',
+                    success: function (data) {
+                        toastr.success('islem basarılı');
+                    }
+                });
+            };
+
+            function sonlandir() {
+                var val = $("#uyg_sonlandir").val();
+                $.ajax({
+                    url: '/Panel/is_kaydi/',
+                    type: 'GET',
+                    data: { gorev: 4, yol: val },
+                    dataType: 'json',
+                    success: function (data) {
+                        toastr.success('islem basarılı');
+                    }
+                });
+            };
+
+
+            function uygulama_sonlandir_liste() {
+                $.ajax({
+                    type: 'GET',
+                    url: '/Panel/uygulama_sonlandir_list/',
+                    dataType: 'JSON',
+                    success: function (data) {
+                        $('#uyg_sonlandir').html("");
+                        $(data.Result).each(function (item) {
+                            //  say++;
+                            //  var satir = '<tr><td>' + say + '</td><td>' + data.Result[item].Islem_adi + '</td><td>' + data.Result[item].Islem_Basligi + '</td><td>' + data.Result[item].Eklenme_Tarihi + '</td><td><button class="btn btn-danger btn-block" onclick="sil(' + "'" + data.Result[item].Islem_adi + "'" + ')">Engeli Kaldır</button></td></tr>';
+                            $('#uyg_sonlandir').append('<option value=' + data.Result[item].P_name + '>' + data.Result[item].Islem_Basligi + '</option>');
+
+                        }
+                        )
+                    }
+                });
+                //say = 0;
+            };
+
+        </script>
+
+
+    }
+    else
+    {
+        <h1 class="text-center">Bilgisayar Eklediğinizde Aktif Olacağız</h1>
+    }
+}

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Sistem_Kontroloru_Servis_01" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:60079/Sistem_Kontroloru_Servis_01.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:60079/Sistem_Kontroloru_Servis_01.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:60079/Sistem_Kontroloru_Servis_01.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Web_App_SistemKontroloru.Models" />
+      <xsd:import schemaLocation="http://localhost:60079/Sistem_Kontroloru_Servis_01.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System.Data" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ISistem_Kontroloru_Servis_01_Servis_Kontrol_InputMessage">
+    <wsdl:part name="parameters" element="tns:Servis_Kontrol" />
+  </wsdl:message>
+  <wsdl:message name="ISistem_Kontroloru_Servis_01_Servis_Kontrol_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Servis_KontrolResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISistem_Kontroloru_Servis_01_giris_InputMessage">
+    <wsdl:part name="parameters" element="tns:giris" />
+  </wsdl:message>
+  <wsdl:message name="ISistem_Kontroloru_Servis_01_giris_OutputMessage">
+    <wsdl:part name="parameters" element="tns:girisResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISistem_Kontroloru_Servis_01_girisSonrasiKontrol_InputMessage">
+    <wsdl:part name="parameters" element="tns:girisSonrasiKontrol" />
+  </wsdl:message>
+  <wsdl:message name="ISistem_Kontroloru_Servis_01_girisSonrasiKontrol_OutputMessage">
+    <wsdl:part name="parameters" element="tns:girisSonrasiKontrolResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISistem_Kontroloru_Servis_01_ayarKontrol_InputMessage">
+    <wsdl:part name="parameters" element="tns:ayarKontrol" />
+  </wsdl:message>
+  <wsdl:message name="ISistem_Kontroloru_Servis_01_ayarKontrol_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ayarKontrolResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISistem_Kontroloru_Servis_01_isEmri_InputMessage">
+    <wsdl:part name="parameters" element="tns:isEmri" />
+  </wsdl:message>
+  <wsdl:message name="ISistem_Kontroloru_Servis_01_isEmri_OutputMessage">
+    <wsdl:part name="parameters" element="tns:isEmriResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISistem_Kontroloru_Servis_01_isEmri_Kapat_InputMessage">
+    <wsdl:part name="parameters" element="tns:isEmri_Kapat" />
+  </wsdl:message>
+  <wsdl:message name="ISistem_Kontroloru_Servis_01_isEmri_Kapat_OutputMessage">
+    <wsdl:part name="parameters" element="tns:isEmri_KapatResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISistem_Kontroloru_Servis_01_uygulama_listesi_gonder_InputMessage">
+    <wsdl:part name="parameters" element="tns:uygulama_listesi_gonder" />
+  </wsdl:message>
+  <wsdl:message name="ISistem_Kontroloru_Servis_01_uygulama_listesi_gonder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:uygulama_listesi_gonderResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISistem_Kontroloru_Servis_01_calisan_uygulama_gonder_InputMessage">
+    <wsdl:part name="parameters" element="tns:calisan_uygulama_gonder" />
+  </wsdl:message>
+  <wsdl:message name="ISistem_Kontroloru_Servis_01_calisan_uygulama_gonder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:calisan_uygulama_gonderResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISistem_Kontroloru_Servis_01_genel_kullanim_gonder_InputMessage">
+    <wsdl:part name="parameters" element="tns:genel_kullanim_gonder" />
+  </wsdl:message>
+  <wsdl:message name="ISistem_Kontroloru_Servis_01_genel_kullanim_gonder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:genel_kullanim_gonderResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISistem_Kontroloru_Servis_01_uygulama_kullanim_gonder_InputMessage">
+    <wsdl:part name="parameters" element="tns:uygulama_kullanim_gonder" />
+  </wsdl:message>
+  <wsdl:message name="ISistem_Kontroloru_Servis_01_uygulama_kullanim_gonder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:uygulama_kullanim_gonderResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISistem_Kontroloru_Servis_01_pc_information_InputMessage">
+    <wsdl:part name="parameters" element="tns:pc_information" />
+  </wsdl:message>
+  <wsdl:message name="ISistem_Kontroloru_Servis_01_pc_information_OutputMessage">
+    <wsdl:part name="parameters" element="tns:pc_informationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISistem_Kontroloru_Servis_01_kullanimlari_esitle_InputMessage">
+    <wsdl:part name="parameters" element="tns:kullanimlari_esitle" />
+  </wsdl:message>
+  <wsdl:message name="ISistem_Kontroloru_Servis_01_kullanimlari_esitle_OutputMessage">
+    <wsdl:part name="parameters" element="tns:kullanimlari_esitleResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ISistem_Kontroloru_Servis_01">
+    <wsdl:operation name="Servis_Kontrol">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISistem_Kontroloru_Servis_01/Servis_Kontrol" message="tns:ISistem_Kontroloru_Servis_01_Servis_Kontrol_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISistem_Kontroloru_Servis_01/Servis_KontrolResponse" message="tns:ISistem_Kontroloru_Servis_01_Servis_Kontrol_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="giris">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISistem_Kontroloru_Servis_01/giris" message="tns:ISistem_Kontroloru_Servis_01_giris_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISistem_Kontroloru_Servis_01/girisResponse" message="tns:ISistem_Kontroloru_Servis_01_giris_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="girisSonrasiKontrol">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISistem_Kontroloru_Servis_01/girisSonrasiKontrol" message="tns:ISistem_Kontroloru_Servis_01_girisSonrasiKontrol_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISistem_Kontroloru_Servis_01/girisSonrasiKontrolResponse" message="tns:ISistem_Kontroloru_Servis_01_girisSonrasiKontrol_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ayarKontrol">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISistem_Kontroloru_Servis_01/ayarKontrol" message="tns:ISistem_Kontroloru_Servis_01_ayarKontrol_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISistem_Kontroloru_Servis_01/ayarKontrolResponse" message="tns:ISistem_Kontroloru_Servis_01_ayarKontrol_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="isEmri">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISistem_Kontroloru_Servis_01/isEmri" message="tns:ISistem_Kontroloru_Servis_01_isEmri_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISistem_Kontroloru_Servis_01/isEmriResponse" message="tns:ISistem_Kontroloru_Servis_01_isEmri_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="isEmri_Kapat">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISistem_Kontroloru_Servis_01/isEmri_Kapat" message="tns:ISistem_Kontroloru_Servis_01_isEmri_Kapat_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISistem_Kontroloru_Servis_01/isEmri_KapatResponse" message="tns:ISistem_Kontroloru_Servis_01_isEmri_Kapat_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="uygulama_listesi_gonder">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISistem_Kontroloru_Servis_01/uygulama_listesi_gonder" message="tns:ISistem_Kontroloru_Servis_01_uygulama_listesi_gonder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISistem_Kontroloru_Servis_01/uygulama_listesi_gonderResponse" message="tns:ISistem_Kontroloru_Servis_01_uygulama_listesi_gonder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="calisan_uygulama_gonder">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISistem_Kontroloru_Servis_01/calisan_uygulama_gonder" message="tns:ISistem_Kontroloru_Servis_01_calisan_uygulama_gonder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISistem_Kontroloru_Servis_01/calisan_uygulama_gonderResponse" message="tns:ISistem_Kontroloru_Servis_01_calisan_uygulama_gonder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="genel_kullanim_gonder">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISistem_Kontroloru_Servis_01/genel_kullanim_gonder" message="tns:ISistem_Kontroloru_Servis_01_genel_kullanim_gonder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISistem_Kontroloru_Servis_01/genel_kullanim_gonderResponse" message="tns:ISistem_Kontroloru_Servis_01_genel_kullanim_gonder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="uygulama_kullanim_gonder">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISistem_Kontroloru_Servis_01/uygulama_kullanim_gonder" message="tns:ISistem_Kontroloru_Servis_01_uygulama_kullanim_gonder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISistem_Kontroloru_Servis_01/uygulama_kullanim_gonderResponse" message="tns:ISistem_Kontroloru_Servis_01_uygulama_kullanim_gonder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="pc_information">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISistem_Kontroloru_Servis_01/pc_information" message="tns:ISistem_Kontroloru_Servis_01_pc_information_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISistem_Kontroloru_Servis_01/pc_informationResponse" message="tns:ISistem_Kontroloru_Servis_01_pc_information_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="kullanimlari_esitle">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISistem_Kontroloru_Servis_01/kullanimlari_esitle" message="tns:ISistem_Kontroloru_Servis_01_kullanimlari_esitle_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISistem_Kontroloru_Servis_01/kullanimlari_esitleResponse" message="tns:ISistem_Kontroloru_Servis_01_kullanimlari_esitle_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ISistem_Kontroloru_Servis_01" type="tns:ISistem_Kontroloru_Servis_01">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Servis_Kontrol">
+      <soap:operation soapAction="http://tempuri.org/ISistem_Kontroloru_Servis_01/Servis_Kontrol" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="giris">
+      <soap:operation soapAction="http://tempuri.org/ISistem_Kontroloru_Servis_01/giris" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="girisSonrasiKontrol">
+      <soap:operation soapAction="http://tempuri.org/ISistem_Kontroloru_Servis_01/girisSonrasiKontrol" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ayarKontrol">
+      <soap:operation soapAction="http://tempuri.org/ISistem_Kontroloru_Servis_01/ayarKontrol" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isEmri">
+      <soap:operation soapAction="http://tempuri.org/ISistem_Kontroloru_Servis_01/isEmri" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isEmri_Kapat">
+      <soap:operation soapAction="http://tempuri.org/ISistem_Kontroloru_Servis_01/isEmri_Kapat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="uygulama_listesi_gonder">
+      <soap:operation soapAction="http://tempuri.org/ISistem_Kontroloru_Servis_01/uygulama_listesi_gonder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="calisan_uygulama_gonder">
+      <soap:operation soapAction="http://tempuri.org/ISistem_Kontroloru_Servis_01/calisan_uygulama_gonder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="genel_kullanim_gonder">
+      <soap:operation soapAction="http://tempuri.org/ISistem_Kontroloru_Servis_01/genel_kullanim_gonder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="uygulama_kullanim_gonder">
+      <soap:operation soapAction="http://tempuri.org/ISistem_Kontroloru_Servis_01/uygulama_kullanim_gonder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pc_information">
+      <soap:operation soapAction="http://tempuri.org/ISistem_Kontroloru_Servis_01/pc_information" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="kullanimlari_esitle">
+      <soap:operation soapAction="http://tempuri.org/ISistem_Kontroloru_Servis_01/kullanimlari_esitle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Sistem_Kontroloru_Servis_01">
+    <wsdl:port name="BasicHttpBinding_ISistem_Kontroloru_Servis_01" binding="tns:BasicHttpBinding_ISistem_Kontroloru_Servis_01">
+      <soap:address location="http://localhost:60079/Sistem_Kontroloru_Servis_01.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

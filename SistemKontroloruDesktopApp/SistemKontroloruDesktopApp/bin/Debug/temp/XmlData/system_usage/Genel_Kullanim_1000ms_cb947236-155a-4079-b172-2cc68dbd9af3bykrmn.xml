@@ -1,0 +1,6035 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="genel_kullanim" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="genel_kullanim">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="cpu" type="xs:string" minOccurs="0" />
+                <xs:element name="memory" type="xs:string" minOccurs="0" />
+                <xs:element name="network_rec" type="xs:string" minOccurs="0" />
+                <xs:element name="network_out" type="xs:string" minOccurs="0" />
+                <xs:element name="io_rec" type="xs:string" minOccurs="0" />
+                <xs:element name="io_out" type="xs:string" minOccurs="0" />
+                <xs:element name="datetime_" type="xs:string" minOccurs="0" />
+                <xs:element name="sync" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <genel_kullanim>
+    <cpu>59,01631</cpu>
+    <memory>9,852257</memory>
+    <network_rec>17,34741</network_rec>
+    <network_out>2,285767</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:05</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>23,5025</cpu>
+    <memory>9,852257</memory>
+    <network_rec>0</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:06</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>33,4047</cpu>
+    <memory>9,852257</memory>
+    <network_rec>0,1103538</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:07</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>27,21639</cpu>
+    <memory>9,852257</memory>
+    <network_rec>0</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:08</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>37,40206</cpu>
+    <memory>9,852257</memory>
+    <network_rec>0,1101242</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:09</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>26,46228</cpu>
+    <memory>9,852257</memory>
+    <network_rec>0</network_rec>
+    <network_out>0,06384417</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:10</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>28,50672</cpu>
+    <memory>9,852257</memory>
+    <network_rec>0</network_rec>
+    <network_out>2,067141</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:11</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>25,70369</cpu>
+    <memory>9,852257</memory>
+    <network_rec>15,35746</network_rec>
+    <network_out>5,195317</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:13</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>78,73449</cpu>
+    <memory>9,852257</memory>
+    <network_rec>83,8867</network_rec>
+    <network_out>12,75924</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:14</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>19,30631</cpu>
+    <memory>9,852257</memory>
+    <network_rec>74,64904</network_rec>
+    <network_out>2,117952</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:15</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>10,51379</cpu>
+    <memory>9,852257</memory>
+    <network_rec>4,5014</network_rec>
+    <network_out>1,844668</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:16</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>14,32573</cpu>
+    <memory>9,852257</memory>
+    <network_rec>0,05427762</network_rec>
+    <network_out>0,05330595</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:17</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>18,2934</cpu>
+    <memory>9,852257</memory>
+    <network_rec>0,1103561</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:18</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>11,61609</cpu>
+    <memory>9,852257</memory>
+    <network_rec>0</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:19</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>39,34338</cpu>
+    <memory>9,850695</memory>
+    <network_rec>4,081445</network_rec>
+    <network_out>21,53677</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:20</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>26,11607</cpu>
+    <memory>9,850695</memory>
+    <network_rec>0,2385494</network_rec>
+    <network_out>0,3023995</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:21</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>19,68328</cpu>
+    <memory>9,850695</memory>
+    <network_rec>0</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:22</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>31,09177</cpu>
+    <memory>9,850695</memory>
+    <network_rec>0,1103678</network_rec>
+    <network_out>0,08332708</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:23</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>23,60485</cpu>
+    <memory>9,850695</memory>
+    <network_rec>0</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:24</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>42,52528</cpu>
+    <memory>9,850695</memory>
+    <network_rec>0,1789808</network_rec>
+    <network_out>2,896968</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:25</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>30,26818</cpu>
+    <memory>9,850695</memory>
+    <network_rec>751,6915</network_rec>
+    <network_out>35,61228</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:26</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>14,28682</cpu>
+    <memory>9,850695</memory>
+    <network_rec>717,027</network_rec>
+    <network_out>9,736041</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:27</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>20,18043</cpu>
+    <memory>9,850695</memory>
+    <network_rec>1412,853</network_rec>
+    <network_out>13,46921</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:28</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>10,84226</cpu>
+    <memory>9,850695</memory>
+    <network_rec>585,9043</network_rec>
+    <network_out>8,628488</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:29</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>32,51232</cpu>
+    <memory>9,850695</memory>
+    <network_rec>51,6472</network_rec>
+    <network_out>3,429632</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:30</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>17,85886</cpu>
+    <memory>9,850695</memory>
+    <network_rec>1170,866</network_rec>
+    <network_out>36,20293</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:31</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>19,54577</cpu>
+    <memory>9,850695</memory>
+    <network_rec>805,5236</network_rec>
+    <network_out>15,95473</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:32</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>31,12567</cpu>
+    <memory>9,850695</memory>
+    <network_rec>1155,158</network_rec>
+    <network_out>25,47631</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:33</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>21,6283</cpu>
+    <memory>9,850695</memory>
+    <network_rec>744,9695</network_rec>
+    <network_out>17,43806</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:34</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>57,59304</cpu>
+    <memory>9,850695</memory>
+    <network_rec>1790,434</network_rec>
+    <network_out>36,87778</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:35</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>31,21395</cpu>
+    <memory>9,850695</memory>
+    <network_rec>1175,758</network_rec>
+    <network_out>16,1346</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:36</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>36,1011</cpu>
+    <memory>9,850695</memory>
+    <network_rec>0,8328533</network_rec>
+    <network_out>10,5691</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:37</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>25,55333</cpu>
+    <memory>9,850695</memory>
+    <network_rec>0</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:38</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>13,99593</cpu>
+    <memory>9,850695</memory>
+    <network_rec>0,2382517</network_rec>
+    <network_out>0,1063515</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:39</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>17,30206</cpu>
+    <memory>9,850695</memory>
+    <network_rec>0</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:40</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>17,11654</cpu>
+    <memory>9,850695</memory>
+    <network_rec>0</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:41</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>11,96141</cpu>
+    <memory>9,850695</memory>
+    <network_rec>0,1648548</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:42</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>23,24419</cpu>
+    <memory>9,850695</memory>
+    <network_rec>0</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:43</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>23,90678</cpu>
+    <memory>9,509158</memory>
+    <network_rec>0</network_rec>
+    <network_out>0,05257323</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:44</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>15,94656</cpu>
+    <memory>9,509158</memory>
+    <network_rec>0,8330002</network_rec>
+    <network_out>1,863364</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:45</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>22,46683</cpu>
+    <memory>9,509158</memory>
+    <network_rec>0</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:46</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>7,07088</cpu>
+    <memory>9,509158</memory>
+    <network_rec>0,1103944</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:47</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>13,58017</cpu>
+    <memory>9,509158</memory>
+    <network_rec>0</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:48</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>13,20063</cpu>
+    <memory>9,509158</memory>
+    <network_rec>0</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:49</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>44,54468</cpu>
+    <memory>9,357335</memory>
+    <network_rec>0</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:50</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>25,71352</cpu>
+    <memory>9,356771</memory>
+    <network_rec>0</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:51</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>62,20732</cpu>
+    <memory>9,355903</memory>
+    <network_rec>1,107018</network_rec>
+    <network_out>3,200825</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:52</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>38,37662</cpu>
+    <memory>9,355599</memory>
+    <network_rec>0,1102561</network_rec>
+    <network_out>4,536426</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:53</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>17,06266</cpu>
+    <memory>9,355599</memory>
+    <network_rec>0,8227489</network_rec>
+    <network_out>4,521989</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:54</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>73,64761</cpu>
+    <memory>9,35421</memory>
+    <network_rec>19,63125</network_rec>
+    <network_out>22,78399</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:55</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>29,56388</cpu>
+    <memory>9,354036</memory>
+    <network_rec>0,1365721</network_rec>
+    <network_out>2,511402</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:56</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>14,28974</cpu>
+    <memory>9,353993</memory>
+    <network_rec>4,999426</network_rec>
+    <network_out>6,47072</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:57</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>50,02237</cpu>
+    <memory>9,34974</memory>
+    <network_rec>1,046301</network_rec>
+    <network_out>7,282533</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:58</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>37,98512</cpu>
+    <memory>9,332986</memory>
+    <network_rec>0,1230607</network_rec>
+    <network_out>3,778597</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:09:59</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>20,11297</cpu>
+    <memory>9,332943</memory>
+    <network_rec>5,246789</network_rec>
+    <network_out>6,423748</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:00</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>32,5585</cpu>
+    <memory>9,332899</memory>
+    <network_rec>0,6036347</network_rec>
+    <network_out>5,489986</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:01</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>22,51231</cpu>
+    <memory>9,332899</memory>
+    <network_rec>0</network_rec>
+    <network_out>3,734694</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:02</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>49,6599</cpu>
+    <memory>9,332465</memory>
+    <network_rec>4,252443</network_rec>
+    <network_out>7,107161</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:03</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>44,51265</cpu>
+    <memory>9,332378</memory>
+    <network_rec>35,09627</network_rec>
+    <network_out>52,19757</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:04</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>37,95556</cpu>
+    <memory>9,332249</memory>
+    <network_rec>32,04585</network_rec>
+    <network_out>12,99827</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:05</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>41,82639</cpu>
+    <memory>9,332249</memory>
+    <network_rec>20,35028</network_rec>
+    <network_out>4,511449</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:06</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>46,15938</cpu>
+    <memory>9,332249</memory>
+    <network_rec>163,3539</network_rec>
+    <network_out>29,84913</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:07</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>17,04572</cpu>
+    <memory>9,332249</memory>
+    <network_rec>0,1036171</network_rec>
+    <network_out>0,1462394</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:08</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>43,44725</cpu>
+    <memory>9,332249</memory>
+    <network_rec>0,8102242</network_rec>
+    <network_out>1,96221</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:09</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>50,0139</cpu>
+    <memory>9,332249</memory>
+    <network_rec>419,6396</network_rec>
+    <network_out>60,35386</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:10</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>31,49994</cpu>
+    <memory>9,332249</memory>
+    <network_rec>830,5543</network_rec>
+    <network_out>61,35112</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:11</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>34,95095</cpu>
+    <memory>9,332205</memory>
+    <network_rec>1460,037</network_rec>
+    <network_out>52,40231</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:12</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>33,36943</cpu>
+    <memory>9,332205</memory>
+    <network_rec>1304,174</network_rec>
+    <network_out>59,25406</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:13</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>28,81082</cpu>
+    <memory>9,285634</memory>
+    <network_rec>1367,553</network_rec>
+    <network_out>66,38987</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:14</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>36,50654</cpu>
+    <memory>9,285547</memory>
+    <network_rec>1703,544</network_rec>
+    <network_out>45,32103</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:15</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>34,89075</cpu>
+    <memory>9,285547</memory>
+    <network_rec>1793,948</network_rec>
+    <network_out>43,29606</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:16</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>31,60207</cpu>
+    <memory>9,28546</memory>
+    <network_rec>1001,477</network_rec>
+    <network_out>25,67083</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:17</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>13,97719</cpu>
+    <memory>9,28546</memory>
+    <network_rec>229,6428</network_rec>
+    <network_out>6,048035</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:18</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>19,00337</cpu>
+    <memory>9,28546</memory>
+    <network_rec>384,0152</network_rec>
+    <network_out>11,74556</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:19</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>20,14721</cpu>
+    <memory>9,28546</memory>
+    <network_rec>291,6716</network_rec>
+    <network_out>7,395055</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:20</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>17,02841</cpu>
+    <memory>9,28546</memory>
+    <network_rec>251,4791</network_rec>
+    <network_out>6,068332</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:21</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>17,89232</cpu>
+    <memory>9,28546</memory>
+    <network_rec>10,86991</network_rec>
+    <network_out>3,36526</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:22</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>21,33135</cpu>
+    <memory>9,28546</memory>
+    <network_rec>64,61059</network_rec>
+    <network_out>49,5887</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:23</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>35,76782</cpu>
+    <memory>9,28546</memory>
+    <network_rec>151,1159</network_rec>
+    <network_out>19,51486</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:24</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>9,983277</cpu>
+    <memory>9,28546</memory>
+    <network_rec>119,8316</network_rec>
+    <network_out>12,22221</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:25</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>8,4334</cpu>
+    <memory>9,28546</memory>
+    <network_rec>65,22161</network_rec>
+    <network_out>8,986207</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:26</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>12,84408</cpu>
+    <memory>9,28546</memory>
+    <network_rec>1,130219</network_rec>
+    <network_out>0,973596</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:27</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>20,55467</cpu>
+    <memory>9,28546</memory>
+    <network_rec>0,0900262</network_rec>
+    <network_out>0,2206221</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:28</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>8,603889</cpu>
+    <memory>9,285374</memory>
+    <network_rec>0</network_rec>
+    <network_out>0,6889808</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:29</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>21,72351</cpu>
+    <memory>9,2852</memory>
+    <network_rec>14,94675</network_rec>
+    <network_out>4,348615</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:30</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>20,41453</cpu>
+    <memory>9,2852</memory>
+    <network_rec>18,31542</network_rec>
+    <network_out>12,17057</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:31</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>10,8056</cpu>
+    <memory>9,2852</memory>
+    <network_rec>2,617256</network_rec>
+    <network_out>4,264151</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:32</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>16,21717</cpu>
+    <memory>9,2852</memory>
+    <network_rec>0,3433044</network_rec>
+    <network_out>0,97825</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:33</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>13,35302</cpu>
+    <memory>9,2852</memory>
+    <network_rec>0</network_rec>
+    <network_out>0,07276179</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:34</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>10,14314</cpu>
+    <memory>9,2852</memory>
+    <network_rec>8,62409</network_rec>
+    <network_out>15,64757</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:35</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>7,454309</cpu>
+    <memory>9,2852</memory>
+    <network_rec>1,338003</network_rec>
+    <network_out>3,807323</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:36</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>11,95977</cpu>
+    <memory>9,285112</memory>
+    <network_rec>5,668518</network_rec>
+    <network_out>1,877556</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:37</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>17,82029</cpu>
+    <memory>9,285112</memory>
+    <network_rec>0,1105026</network_rec>
+    <network_out>0,07364508</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:38</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>8,877807</cpu>
+    <memory>9,285112</memory>
+    <network_rec>0</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:39</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>17,85186</cpu>
+    <memory>9,513064</memory>
+    <network_rec>0,1404243</network_rec>
+    <network_out>0,1597585</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:40</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>14,7652</cpu>
+    <memory>9,513064</memory>
+    <network_rec>0,2576316</network_rec>
+    <network_out>0,1743572</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:41</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>21,69609</cpu>
+    <memory>9,513064</memory>
+    <network_rec>0</network_rec>
+    <network_out>0,07364896</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:42</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>74,81218</cpu>
+    <memory>9,513064</memory>
+    <network_rec>6,459723</network_rec>
+    <network_out>3,466555</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:43</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>49,34979</cpu>
+    <memory>9,513064</memory>
+    <network_rec>0</network_rec>
+    <network_out>0,07333215</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:44</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>46,77975</cpu>
+    <memory>9,512891</memory>
+    <network_rec>0,06369326</network_rec>
+    <network_out>0,1264107</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:45</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>34,35696</cpu>
+    <memory>9,512891</memory>
+    <network_rec>0,1101588</network_rec>
+    <network_out>0,07350364</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:47</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>42,14179</cpu>
+    <memory>9,512891</memory>
+    <network_rec>0</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:48</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>37,69665</cpu>
+    <memory>9,512891</memory>
+    <network_rec>5,090028</network_rec>
+    <network_out>1,949404</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:49</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>55,83625</cpu>
+    <memory>9,512891</memory>
+    <network_rec>19,66842</network_rec>
+    <network_out>9,998055</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:50</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>39,60514</cpu>
+    <memory>9,512891</memory>
+    <network_rec>56,64669</network_rec>
+    <network_out>1,193433</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:51</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>37,99744</cpu>
+    <memory>9,512891</memory>
+    <network_rec>0,8476648</network_rec>
+    <network_out>0,4107863</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:52</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>33,33704</cpu>
+    <memory>9,512891</memory>
+    <network_rec>0</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:53</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>43,04324</cpu>
+    <memory>9,512891</memory>
+    <network_rec>0</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:54</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>25,14077</cpu>
+    <memory>9,512891</memory>
+    <network_rec>0,4604083</network_rec>
+    <network_out>0,05223994</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:55</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>14,21236</cpu>
+    <memory>9,512891</memory>
+    <network_rec>0</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:56</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>12,81901</cpu>
+    <memory>9,512891</memory>
+    <network_rec>1,182817</network_rec>
+    <network_out>0,6464341</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:57</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>10,47368</cpu>
+    <memory>9,512891</memory>
+    <network_rec>1,199264</network_rec>
+    <network_out>0,9927975</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:58</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>11,59819</cpu>
+    <memory>9,512891</memory>
+    <network_rec>0,1105178</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:10:59</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>24,05555</cpu>
+    <memory>9,512891</memory>
+    <network_rec>0</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:00</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>25,26581</cpu>
+    <memory>9,512847</memory>
+    <network_rec>0,1100898</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:01</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>14,7196</cpu>
+    <memory>9,512847</memory>
+    <network_rec>0</network_rec>
+    <network_out>0,06395768</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:02</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>10,85497</cpu>
+    <memory>9,512847</memory>
+    <network_rec>0</network_rec>
+    <network_out>0,08624425</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:03</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>18,16202</cpu>
+    <memory>9,512847</memory>
+    <network_rec>0,2569304</network_rec>
+    <network_out>0,1386141</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:04</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>15,1186</cpu>
+    <memory>9,512804</memory>
+    <network_rec>0</network_rec>
+    <network_out>0,06396902</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:05</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>10,82436</cpu>
+    <memory>9,512804</memory>
+    <network_rec>0</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:06</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>6,61884</cpu>
+    <memory>9,512804</memory>
+    <network_rec>0,06373586</network_rec>
+    <network_out>0,2008754</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:07</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>20,46272</cpu>
+    <memory>9,512804</memory>
+    <network_rec>0,1258649</network_rec>
+    <network_out>0,5420391</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:08</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>31,43168</cpu>
+    <memory>9,512804</memory>
+    <network_rec>1,954499</network_rec>
+    <network_out>3,262454</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:09</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>61,63627</cpu>
+    <memory>9,512804</memory>
+    <network_rec>75,85252</network_rec>
+    <network_out>10,30978</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:10</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>54,75555</cpu>
+    <memory>9,512804</memory>
+    <network_rec>0,6264555</network_rec>
+    <network_out>0,828828</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:11</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>38,01365</cpu>
+    <memory>9,512804</memory>
+    <network_rec>1,315398</network_rec>
+    <network_out>2,084587</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:12</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>37,22632</cpu>
+    <memory>9,508637</memory>
+    <network_rec>0</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:13</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>24,80683</cpu>
+    <memory>9,519749</memory>
+    <network_rec>0</network_rec>
+    <network_out>0,07365119</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:14</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>15,89201</cpu>
+    <memory>9,519749</memory>
+    <network_rec>0,1104702</network_rec>
+    <network_out>0,2480799</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:15</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>10,0858</cpu>
+    <memory>9,519749</memory>
+    <network_rec>0,8418972</network_rec>
+    <network_out>0,8660986</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:16</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>4,915599</cpu>
+    <memory>9,519749</memory>
+    <network_rec>0</network_rec>
+    <network_out>0,4739982</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:17</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>17,65204</cpu>
+    <memory>9,519749</memory>
+    <network_rec>1,999969</network_rec>
+    <network_out>1,865808</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:18</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>25,20065</cpu>
+    <memory>9,519749</memory>
+    <network_rec>12,77575</network_rec>
+    <network_out>3,711991</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:19</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>11,28075</cpu>
+    <memory>9,519749</memory>
+    <network_rec>0,1104383</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:20</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>37,2439</cpu>
+    <memory>9,519749</memory>
+    <network_rec>0,1404064</network_rec>
+    <network_out>0,08615465</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:21</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>18,34175</cpu>
+    <memory>9,519749</memory>
+    <network_rec>0,1789717</network_rec>
+    <network_out>0,4584431</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:22</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>35,67539</cpu>
+    <memory>9,519662</memory>
+    <network_rec>0,6192659</network_rec>
+    <network_out>0,81132</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:23</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>51,03512</cpu>
+    <memory>9,519618</memory>
+    <network_rec>77,05802</network_rec>
+    <network_out>33,2807</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:24</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>60,93568</cpu>
+    <memory>9,36033</memory>
+    <network_rec>53,47509</network_rec>
+    <network_out>5,649967</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:25</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>84,89903</cpu>
+    <memory>9,360243</memory>
+    <network_rec>143,8757</network_rec>
+    <network_out>25,82103</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:26</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>60,68531</cpu>
+    <memory>9,360243</memory>
+    <network_rec>64,38303</network_rec>
+    <network_out>14,94601</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:27</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>15,03575</cpu>
+    <memory>9,3602</memory>
+    <network_rec>20,36643</network_rec>
+    <network_out>7,489443</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:28</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>12,66407</cpu>
+    <memory>9,3602</memory>
+    <network_rec>8,100965</network_rec>
+    <network_out>4,477118</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:29</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>14,3688</cpu>
+    <memory>9,360156</memory>
+    <network_rec>30,99733</network_rec>
+    <network_out>17,29421</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:30</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>30,64434</cpu>
+    <memory>9,360156</memory>
+    <network_rec>8,074073</network_rec>
+    <network_out>4,50572</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:31</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>22,21598</cpu>
+    <memory>9,360113</memory>
+    <network_rec>17,55679</network_rec>
+    <network_out>11,51121</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:32</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>18,69731</cpu>
+    <memory>9,360113</memory>
+    <network_rec>6,785696</network_rec>
+    <network_out>5,628777</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:33</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>18,41774</cpu>
+    <memory>9,360113</memory>
+    <network_rec>1,269744</network_rec>
+    <network_out>1,785556</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:34</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>23,59035</cpu>
+    <memory>9,360113</memory>
+    <network_rec>17,13486</network_rec>
+    <network_out>14,69071</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:35</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>10,81727</cpu>
+    <memory>9,360113</memory>
+    <network_rec>10,6547</network_rec>
+    <network_out>5,821581</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:36</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>7,40851</cpu>
+    <memory>9,360113</memory>
+    <network_rec>0,1104319</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:37</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>13,24299</cpu>
+    <memory>9,360113</memory>
+    <network_rec>0,2216997</network_rec>
+    <network_out>0,4636927</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:38</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>12,36421</cpu>
+    <memory>9,360069</memory>
+    <network_rec>0</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:39</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>11,25152</cpu>
+    <memory>9,360069</memory>
+    <network_rec>0,2470753</network_rec>
+    <network_out>0,0523174</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:40</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>12,37566</cpu>
+    <memory>9,360069</memory>
+    <network_rec>0,06105029</network_rec>
+    <network_out>0,06299084</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:41</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>29,07162</cpu>
+    <memory>9,360069</memory>
+    <network_rec>0</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:42</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>10,88746</cpu>
+    <memory>9,360069</memory>
+    <network_rec>0,1278434</network_rec>
+    <network_out>0,1062863</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:43</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>16,10576</cpu>
+    <memory>9,360069</memory>
+    <network_rec>0</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:44</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>12,85472</cpu>
+    <memory>9,360069</memory>
+    <network_rec>0</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:45</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>12,84267</cpu>
+    <memory>9,360069</memory>
+    <network_rec>0,3147602</network_rec>
+    <network_out>0,08046784</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:46</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>20,51775</cpu>
+    <memory>9,360069</memory>
+    <network_rec>0</network_rec>
+    <network_out>0,07357029</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:47</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>22,54968</cpu>
+    <memory>9,360069</memory>
+    <network_rec>0,1103755</network_rec>
+    <network_out>0,07358741</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:48</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>12,80383</cpu>
+    <memory>9,360069</memory>
+    <network_rec>0</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:49</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>26,08885</cpu>
+    <memory>9,360069</memory>
+    <network_rec>0</network_rec>
+    <network_out>0,07359469</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:50</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>21,85022</cpu>
+    <memory>9,360069</memory>
+    <network_rec>14,14971</network_rec>
+    <network_out>16,13971</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:51</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>34,53564</cpu>
+    <memory>9,360069</memory>
+    <network_rec>169,7881</network_rec>
+    <network_out>40,24869</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:52</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>24,64982</cpu>
+    <memory>9,360069</memory>
+    <network_rec>33,13871</network_rec>
+    <network_out>10,33935</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:53</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>20,58095</cpu>
+    <memory>9,315928</memory>
+    <network_rec>14,22575</network_rec>
+    <network_out>2,255064</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:54</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>12,0913</cpu>
+    <memory>9,315928</memory>
+    <network_rec>0,3281603</network_rec>
+    <network_out>0,2119283</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:55</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>15,50919</cpu>
+    <memory>9,315928</memory>
+    <network_rec>0,2907594</network_rec>
+    <network_out>0,2811981</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:56</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>12,02407</cpu>
+    <memory>9,315928</memory>
+    <network_rec>0,1104615</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:57</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>10,5427</cpu>
+    <memory>9,315928</memory>
+    <network_rec>0</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:58</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>17,8404</cpu>
+    <memory>9,315928</memory>
+    <network_rec>104,4319</network_rec>
+    <network_out>8,549994</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:11:59</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>19,8115</cpu>
+    <memory>9,315928</memory>
+    <network_rec>1,060445</network_rec>
+    <network_out>2,688007</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:00</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>33,83708</cpu>
+    <memory>9,315928</memory>
+    <network_rec>104,9067</network_rec>
+    <network_out>4,803873</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:01</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>14,74835</cpu>
+    <memory>9,315928</memory>
+    <network_rec>0</network_rec>
+    <network_out>0,2094311</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:02</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>31,39033</cpu>
+    <memory>9,315928</memory>
+    <network_rec>0</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:03</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>33,68242</cpu>
+    <memory>9,312978</memory>
+    <network_rec>20,33309</network_rec>
+    <network_out>7,947071</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:04</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>9,740609</cpu>
+    <memory>9,312978</memory>
+    <network_rec>66,72223</network_rec>
+    <network_out>2,507572</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:05</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>11,38533</cpu>
+    <memory>9,312978</memory>
+    <network_rec>0,05373634</network_rec>
+    <network_out>0,3454183</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:06</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>7,950323</cpu>
+    <memory>9,312978</memory>
+    <network_rec>1,307092</network_rec>
+    <network_out>2,988951</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:07</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>14,79154</cpu>
+    <memory>9,312978</memory>
+    <network_rec>5,107277</network_rec>
+    <network_out>3,960689</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:08</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>13,97781</cpu>
+    <memory>9,312978</memory>
+    <network_rec>3,840782</network_rec>
+    <network_out>5,479117</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:09</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>18,98106</cpu>
+    <memory>9,312978</memory>
+    <network_rec>0</network_rec>
+    <network_out>0,2655768</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:10</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>12,81743</cpu>
+    <memory>9,312978</memory>
+    <network_rec>0,9125413</network_rec>
+    <network_out>0,8741389</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:11</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>18,18641</cpu>
+    <memory>9,312934</memory>
+    <network_rec>0,4798321</network_rec>
+    <network_out>1,690091</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:12</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>44,63013</cpu>
+    <memory>9,312934</memory>
+    <network_rec>0,4331827</network_rec>
+    <network_out>0,1037934</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:13</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>58,17994</cpu>
+    <memory>9,312934</memory>
+    <network_rec>0,1278495</network_rec>
+    <network_out>0,1065503</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:14</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>42,7502</cpu>
+    <memory>9,312891</memory>
+    <network_rec>0,06381838</network_rec>
+    <network_out>0,1266884</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:15</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>34,95947</cpu>
+    <memory>9,312891</memory>
+    <network_rec>33,49557</network_rec>
+    <network_out>3,968836</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:16</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>32,95051</cpu>
+    <memory>9,312891</memory>
+    <network_rec>0</network_rec>
+    <network_out>0,0532904</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:17</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>29,90885</cpu>
+    <memory>9,312891</memory>
+    <network_rec>0,06387826</network_rec>
+    <network_out>0,1268971</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:18</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>12,75614</cpu>
+    <memory>9,312891</memory>
+    <network_rec>0,1580633</network_rec>
+    <network_out>0,06393761</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:19</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>11,46869</cpu>
+    <memory>9,312891</memory>
+    <network_rec>0</network_rec>
+    <network_out>0,07278043</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:20</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>12,52256</cpu>
+    <memory>9,312847</memory>
+    <network_rec>0,2576567</network_rec>
+    <network_out>0,9616115</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:21</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>17,90862</cpu>
+    <memory>9,312847</memory>
+    <network_rec>6,502698</network_rec>
+    <network_out>4,444919</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:22</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>15,13104</cpu>
+    <memory>9,312847</memory>
+    <network_rec>1,946477</network_rec>
+    <network_out>0,8784407</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:23</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>30,27209</cpu>
+    <memory>9,312847</memory>
+    <network_rec>10,2087</network_rec>
+    <network_out>1,460582</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:24</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>19,13475</cpu>
+    <memory>9,312847</memory>
+    <network_rec>29,31788</network_rec>
+    <network_out>16,46725</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:25</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>10,18066</cpu>
+    <memory>9,312847</memory>
+    <network_rec>0,9359373</network_rec>
+    <network_out>0,482023</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:26</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>9,719686</cpu>
+    <memory>9,312847</memory>
+    <network_rec>0,1104317</network_rec>
+    <network_out>0,1055827</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:27</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>7,365945</cpu>
+    <memory>9,312847</memory>
+    <network_rec>0,1279026</network_rec>
+    <network_out>0,1269504</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:28</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>11,47105</cpu>
+    <memory>9,312847</memory>
+    <network_rec>4,229858</network_rec>
+    <network_out>3,863591</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:30</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>15,78732</cpu>
+    <memory>9,312847</memory>
+    <network_rec>11,51168</network_rec>
+    <network_out>1,760124</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:31</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>18,28245</cpu>
+    <memory>9,312847</memory>
+    <network_rec>0,9707067</network_rec>
+    <network_out>1,209654</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:32</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>14,82048</cpu>
+    <memory>9,312847</memory>
+    <network_rec>14,70164</network_rec>
+    <network_out>5,041754</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:33</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>24,44559</cpu>
+    <memory>9,312847</memory>
+    <network_rec>9,609186</network_rec>
+    <network_out>6,721</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:34</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>32,59442</cpu>
+    <memory>9,312847</memory>
+    <network_rec>1,670418</network_rec>
+    <network_out>0,9050689</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:35</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>21,75322</cpu>
+    <memory>9,312847</memory>
+    <network_rec>0,3351031</network_rec>
+    <network_out>0,6528034</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:36</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>13,92085</cpu>
+    <memory>9,552691</memory>
+    <network_rec>0,08239089</network_rec>
+    <network_out>0,05235891</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:37</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>12,24248</cpu>
+    <memory>9,552691</memory>
+    <network_rec>0</network_rec>
+    <network_out>0,525313</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:38</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>10,94904</cpu>
+    <memory>9,552691</memory>
+    <network_rec>0,5122871</network_rec>
+    <network_out>0,8249251</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:39</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>15,53518</cpu>
+    <memory>9,552691</memory>
+    <network_rec>0,6216866</network_rec>
+    <network_out>1,702842</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:40</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>12,8307</cpu>
+    <memory>9,552691</memory>
+    <network_rec>9,634192</network_rec>
+    <network_out>0,2558503</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:41</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>13,22096</cpu>
+    <memory>9,552691</memory>
+    <network_rec>0,05423702</network_rec>
+    <network_out>0,05325196</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:42</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>18,23069</cpu>
+    <memory>9,552648</memory>
+    <network_rec>0,1104248</network_rec>
+    <network_out>0,07362131</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:43</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>34,23951</cpu>
+    <memory>9,552648</memory>
+    <network_rec>6,23603</network_rec>
+    <network_out>6,587936</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:44</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>15,43995</cpu>
+    <memory>9,552648</memory>
+    <network_rec>1,016454</network_rec>
+    <network_out>0,06774502</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:45</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>36,58188</cpu>
+    <memory>9,552604</memory>
+    <network_rec>0,136306</network_rec>
+    <network_out>0,1258484</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:46</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>26,08232</cpu>
+    <memory>9,552604</memory>
+    <network_rec>0</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:47</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>20,13538</cpu>
+    <memory>9,552604</memory>
+    <network_rec>0,1104856</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:48</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>17,79176</cpu>
+    <memory>9,552604</memory>
+    <network_rec>0</network_rec>
+    <network_out>0,9939178</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:49</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>17,24936</cpu>
+    <memory>9,552604</memory>
+    <network_rec>0,474564</network_rec>
+    <network_out>0,1781814</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:50</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>10,1194</cpu>
+    <memory>9,552604</memory>
+    <network_rec>0,2702534</network_rec>
+    <network_out>0,8834602</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:51</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>7,094824</cpu>
+    <memory>9,552604</memory>
+    <network_rec>0,2419096</network_rec>
+    <network_out>0,1251528</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:52</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>26,37935</cpu>
+    <memory>9,552474</memory>
+    <network_rec>14,03429</network_rec>
+    <network_out>6,611948</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:53</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>38,04332</cpu>
+    <memory>9,552474</memory>
+    <network_rec>61,36776</network_rec>
+    <network_out>6,581386</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:54</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>52,05895</cpu>
+    <memory>9,552474</memory>
+    <network_rec>120,7167</network_rec>
+    <network_out>8,027702</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:55</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>32,28038</cpu>
+    <memory>9,552474</memory>
+    <network_rec>0,1818494</network_rec>
+    <network_out>0,1798774</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:56</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>25,25079</cpu>
+    <memory>9,55243</memory>
+    <network_rec>0,1917351</network_rec>
+    <network_out>0,2867499</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:57</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>17,42431</cpu>
+    <memory>9,55243</memory>
+    <network_rec>0,1918744</network_rec>
+    <network_out>0,1049095</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:58</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>29,0985</cpu>
+    <memory>9,55243</memory>
+    <network_rec>0,1677518</network_rec>
+    <network_out>0,2100929</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:12:59</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>20,57277</cpu>
+    <memory>9,552343</memory>
+    <network_rec>0,2848081</network_rec>
+    <network_out>0,1540808</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:00</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>36,03165</cpu>
+    <memory>9,552343</memory>
+    <network_rec>0,0639701</network_rec>
+    <network_out>0,05327514</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:01</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>43,79365</cpu>
+    <memory>9,552343</memory>
+    <network_rec>0,5339647</network_rec>
+    <network_out>1,971158</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:02</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>27,21675</cpu>
+    <memory>9,5523</memory>
+    <network_rec>238,178</network_rec>
+    <network_out>6,516425</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:03</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>21,44335</cpu>
+    <memory>9,5523</memory>
+    <network_rec>102,101</network_rec>
+    <network_out>3,33744</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:04</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>47,62116</cpu>
+    <memory>9,5523</memory>
+    <network_rec>0,7398673</network_rec>
+    <network_out>1,088866</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:05</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>10,4316</cpu>
+    <memory>9,5523</memory>
+    <network_rec>0</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:06</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>25,20115</cpu>
+    <memory>9,552257</memory>
+    <network_rec>0,247014</network_rec>
+    <network_out>0,1385157</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:07</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>30,25266</cpu>
+    <memory>9,552257</memory>
+    <network_rec>54,12426</network_rec>
+    <network_out>14,13187</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:08</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>15,27015</cpu>
+    <memory>9,552257</memory>
+    <network_rec>45,84372</network_rec>
+    <network_out>3,684789</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:09</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>20,65981</cpu>
+    <memory>9,552257</memory>
+    <network_rec>60,75134</network_rec>
+    <network_out>4,299654</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:10</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>20,20353</cpu>
+    <memory>9,552257</memory>
+    <network_rec>0,1705061</network_rec>
+    <network_out>0,4238431</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:11</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>13,53751</cpu>
+    <memory>9,552257</memory>
+    <network_rec>0,3599421</network_rec>
+    <network_out>0,5500046</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:12</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>26,44688</cpu>
+    <memory>9,552257</memory>
+    <network_rec>15,70247</network_rec>
+    <network_out>7,299862</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:13</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>25,95638</cpu>
+    <memory>9,552257</memory>
+    <network_rec>42,8768</network_rec>
+    <network_out>3,14988</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:14</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>30,64711</cpu>
+    <memory>9,552257</memory>
+    <network_rec>6,052731</network_rec>
+    <network_out>5,797571</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:15</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>42,64233</cpu>
+    <memory>9,552257</memory>
+    <network_rec>77,50922</network_rec>
+    <network_out>28,52396</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:16</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>36,71526</cpu>
+    <memory>9,552214</memory>
+    <network_rec>6,054996</network_rec>
+    <network_out>8,031622</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:17</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>63,11312</cpu>
+    <memory>9,552214</memory>
+    <network_rec>24,21889</network_rec>
+    <network_out>3,301962</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:18</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>87,37752</cpu>
+    <memory>9,552214</memory>
+    <network_rec>20,45313</network_rec>
+    <network_out>27,28722</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:19</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>63,0342</cpu>
+    <memory>9,552214</memory>
+    <network_rec>22,42706</network_rec>
+    <network_out>11,03816</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:20</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>41,19674</cpu>
+    <memory>9,55217</memory>
+    <network_rec>6,2727</network_rec>
+    <network_out>1,662028</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:21</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>38,76361</cpu>
+    <memory>9,55217</memory>
+    <network_rec>7,217334</network_rec>
+    <network_out>15,25277</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:22</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>70,95967</cpu>
+    <memory>9,55217</memory>
+    <network_rec>27,87419</network_rec>
+    <network_out>16,83275</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:23</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>94,19397</cpu>
+    <memory>9,55217</memory>
+    <network_rec>20,02236</network_rec>
+    <network_out>17,5844</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:24</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>36,6089</cpu>
+    <memory>9,55217</memory>
+    <network_rec>8,002987</network_rec>
+    <network_out>1,273636</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:25</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>19,60119</cpu>
+    <memory>9,55217</memory>
+    <network_rec>9,71615</network_rec>
+    <network_out>7,074934</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:26</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>42,31343</cpu>
+    <memory>9,55217</memory>
+    <network_rec>4,880045</network_rec>
+    <network_out>9,239341</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:27</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>52,40563</cpu>
+    <memory>9,552127</memory>
+    <network_rec>1,082551</network_rec>
+    <network_out>0,1798714</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:28</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>13,00468</cpu>
+    <memory>9,552127</memory>
+    <network_rec>0,1053232</network_rec>
+    <network_out>0,3636858</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:29</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>15,60699</cpu>
+    <memory>9,552127</memory>
+    <network_rec>0,1597562</network_rec>
+    <network_out>0,7155745</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:30</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>80,99684</cpu>
+    <memory>9,552083</memory>
+    <network_rec>54,50179</network_rec>
+    <network_out>44,52344</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:31</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>57,36642</cpu>
+    <memory>9,552083</memory>
+    <network_rec>29,78009</network_rec>
+    <network_out>9,566202</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:32</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>81,04094</cpu>
+    <memory>9,552083</memory>
+    <network_rec>21,78529</network_rec>
+    <network_out>4,287139</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:33</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>74,87182</cpu>
+    <memory>9,519531</memory>
+    <network_rec>5,037622</network_rec>
+    <network_out>4,733875</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:34</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>34,86224</cpu>
+    <memory>9,519531</memory>
+    <network_rec>7,002317</network_rec>
+    <network_out>0,9798169</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:35</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>46,53551</cpu>
+    <memory>9,519531</memory>
+    <network_rec>523,691</network_rec>
+    <network_out>6,866648</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:36</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>19,35819</cpu>
+    <memory>9,519531</memory>
+    <network_rec>1925,152</network_rec>
+    <network_out>13,531</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:37</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>25,63742</cpu>
+    <memory>9,519531</memory>
+    <network_rec>1225,459</network_rec>
+    <network_out>19,62789</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:38</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>19,36712</cpu>
+    <memory>9,519531</memory>
+    <network_rec>1771,616</network_rec>
+    <network_out>15,62164</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:39</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>25,2512</cpu>
+    <memory>9,519487</memory>
+    <network_rec>0,3815621</network_rec>
+    <network_out>1,45152</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:40</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>20,57106</cpu>
+    <memory>9,519487</memory>
+    <network_rec>0,3183768</network_rec>
+    <network_out>0,7196715</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:41</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>28,81933</cpu>
+    <memory>9,519487</memory>
+    <network_rec>6,348812</network_rec>
+    <network_out>4,916969</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:42</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>29,98763</cpu>
+    <memory>9,117752</memory>
+    <network_rec>10,73654</network_rec>
+    <network_out>7,648492</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:43</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>79,42592</cpu>
+    <memory>9,117579</memory>
+    <network_rec>1,037024</network_rec>
+    <network_out>1,573278</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:44</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>30,31527</cpu>
+    <memory>9,117579</memory>
+    <network_rec>0,4298133</network_rec>
+    <network_out>0,6780014</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:45</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>18,81045</cpu>
+    <memory>9,117579</memory>
+    <network_rec>0,06379066</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:46</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>17,98919</cpu>
+    <memory>9,117579</memory>
+    <network_rec>0</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:47</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>17,61844</cpu>
+    <memory>9,117579</memory>
+    <network_rec>0,1102053</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:48</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>23,38406</cpu>
+    <memory>9,117579</memory>
+    <network_rec>0,3249362</network_rec>
+    <network_out>0,7004734</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:49</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>12,86641</cpu>
+    <memory>9,117579</memory>
+    <network_rec>0,7691903</network_rec>
+    <network_out>0,3836338</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:50</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>25,63835</cpu>
+    <memory>9,117535</memory>
+    <network_rec>7,407364</network_rec>
+    <network_out>1,729903</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:51</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>13,98473</cpu>
+    <memory>9,117535</memory>
+    <network_rec>0</network_rec>
+    <network_out>0,07361802</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:52</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>28,66624</cpu>
+    <memory>9,117535</memory>
+    <network_rec>0,4390054</network_rec>
+    <network_out>0,2121983</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:53</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>14,31525</cpu>
+    <memory>9,117535</memory>
+    <network_rec>0,1366909</network_rec>
+    <network_out>0,126056</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:54</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>11,67612</cpu>
+    <memory>9,117535</memory>
+    <network_rec>0,1103885</network_rec>
+    <network_out>0,07358477</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:55</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>20,81445</cpu>
+    <memory>9,117535</memory>
+    <network_rec>0,5244364</network_rec>
+    <network_out>1,19296</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:56</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>18,08463</cpu>
+    <memory>9,117535</memory>
+    <network_rec>0,05413368</network_rec>
+    <network_out>0,1781373</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:57</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>31,04021</cpu>
+    <memory>9,117535</memory>
+    <network_rec>0,3660639</network_rec>
+    <network_out>0,2132372</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:13:58</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>32,94806</cpu>
+    <memory>9,117535</memory>
+    <network_rec>0</network_rec>
+    <network_out>0,2080117</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:00</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>44,47204</cpu>
+    <memory>9,117535</memory>
+    <network_rec>0,2073651</network_rec>
+    <network_out>0,3584989</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:01</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>45,05944</cpu>
+    <memory>9,117535</memory>
+    <network_rec>0,6555462</network_rec>
+    <network_out>0,4817424</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:02</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>22,93698</cpu>
+    <memory>9,117535</memory>
+    <network_rec>0,1907792</network_rec>
+    <network_out>0,3136867</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:03</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>40,37193</cpu>
+    <memory>9,117535</memory>
+    <network_rec>0,06386364</network_rec>
+    <network_out>0,1267653</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:04</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>26,52689</cpu>
+    <memory>9,117535</memory>
+    <network_rec>0,3655779</network_rec>
+    <network_out>0,4334734</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:05</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>10,51998</cpu>
+    <memory>9,117535</memory>
+    <network_rec>0</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:06</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>12,80482</cpu>
+    <memory>9,117492</memory>
+    <network_rec>8,235867</network_rec>
+    <network_out>4,242472</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:07</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>15,09959</cpu>
+    <memory>9,117492</memory>
+    <network_rec>0</network_rec>
+    <network_out>0,07364543</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:08</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>23,22646</cpu>
+    <memory>9,117492</memory>
+    <network_rec>0,3383078</network_rec>
+    <network_out>0,3731307</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:09</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>20,37183</cpu>
+    <memory>9,117405</memory>
+    <network_rec>0,998109</network_rec>
+    <network_out>0,7394747</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:10</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>29,53699</cpu>
+    <memory>9,117405</memory>
+    <network_rec>2,133714</network_rec>
+    <network_out>2,186522</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:11</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>14,00704</cpu>
+    <memory>9,117405</memory>
+    <network_rec>0,1742892</network_rec>
+    <network_out>0,06391288</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:12</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>6,945656</cpu>
+    <memory>9,117405</memory>
+    <network_rec>0,2238855</network_rec>
+    <network_out>0,0522921</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:13</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>16,47597</cpu>
+    <memory>9,117405</memory>
+    <network_rec>5,101771</network_rec>
+    <network_out>8,80239</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:14</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>20,18276</cpu>
+    <memory>9,117405</memory>
+    <network_rec>5,783964</network_rec>
+    <network_out>3,149839</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:15</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>47,66148</cpu>
+    <memory>9,117405</memory>
+    <network_rec>1,713631</network_rec>
+    <network_out>5,298097</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:16</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>20,23411</cpu>
+    <memory>9,117405</memory>
+    <network_rec>6,351783</network_rec>
+    <network_out>0,3593571</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:17</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>12,91301</cpu>
+    <memory>9,117405</memory>
+    <network_rec>0,06384867</network_rec>
+    <network_out>0,05326866</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:18</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>29,93474</cpu>
+    <memory>9,117405</memory>
+    <network_rec>42,23388</network_rec>
+    <network_out>17,92322</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:19</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>77,92652</cpu>
+    <memory>9,117405</memory>
+    <network_rec>44,04692</network_rec>
+    <network_out>19,20905</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:20</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>93,10714</cpu>
+    <memory>9,117405</memory>
+    <network_rec>16,40098</network_rec>
+    <network_out>10,75959</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:21</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>25,43753</cpu>
+    <memory>9,117361</memory>
+    <network_rec>0</network_rec>
+    <network_out>0,07288173</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:22</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>22,67123</cpu>
+    <memory>9,117361</memory>
+    <network_rec>0</network_rec>
+    <network_out>0,07365926</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:23</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>20,90722</cpu>
+    <memory>9,117361</memory>
+    <network_rec>1,339387</network_rec>
+    <network_out>5,497777</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:24</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>82,59037</cpu>
+    <memory>9,117361</memory>
+    <network_rec>22,65716</network_rec>
+    <network_out>12,21779</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:25</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>80,03217</cpu>
+    <memory>9,117361</memory>
+    <network_rec>4,363235</network_rec>
+    <network_out>5,879322</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:26</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>40,03938</cpu>
+    <memory>9,117361</memory>
+    <network_rec>0,2106258</network_rec>
+    <network_out>0,1601322</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:27</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>46,21289</cpu>
+    <memory>9,117361</memory>
+    <network_rec>0,1100903</network_rec>
+    <network_out>0,126813</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:28</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>40,32777</cpu>
+    <memory>9,117361</memory>
+    <network_rec>0,4059626</network_rec>
+    <network_out>0,2840064</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:29</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>16,41899</cpu>
+    <memory>9,117361</memory>
+    <network_rec>0,1470346</network_rec>
+    <network_out>2,792204</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:30</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>18,64531</cpu>
+    <memory>9,117361</memory>
+    <network_rec>4,316877</network_rec>
+    <network_out>2,789113</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:31</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>55,84317</cpu>
+    <memory>9,117361</memory>
+    <network_rec>0</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:32</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>16,14532</cpu>
+    <memory>9,117361</memory>
+    <network_rec>0</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:33</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>22,27338</cpu>
+    <memory>9,117361</memory>
+    <network_rec>0</network_rec>
+    <network_out>0,06282035</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:34</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>23,33494</cpu>
+    <memory>9,117361</memory>
+    <network_rec>0,633257</network_rec>
+    <network_out>0,3245489</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:35</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>15,8915</cpu>
+    <memory>9,117361</memory>
+    <network_rec>0</network_rec>
+    <network_out>0,07361964</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:36</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>10,09183</cpu>
+    <memory>9,117361</memory>
+    <network_rec>0</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:37</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>11,66188</cpu>
+    <memory>9,117361</memory>
+    <network_rec>0,06392725</network_rec>
+    <network_out>0,1268838</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:38</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>19,74415</cpu>
+    <memory>9,117361</memory>
+    <network_rec>2,619039</network_rec>
+    <network_out>12,06351</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:39</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>77,18216</cpu>
+    <memory>9,117361</memory>
+    <network_rec>62,50618</network_rec>
+    <network_out>19,28891</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:40</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>51,34666</cpu>
+    <memory>9,117361</memory>
+    <network_rec>4,624924</network_rec>
+    <network_out>2,66862</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:41</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>31,45131</cpu>
+    <memory>9,117361</memory>
+    <network_rec>0</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:42</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>51,68168</cpu>
+    <memory>9,117318</memory>
+    <network_rec>2,757825</network_rec>
+    <network_out>1,811158</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:43</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>93,90609</cpu>
+    <memory>9,117231</memory>
+    <network_rec>64,33237</network_rec>
+    <network_out>9,244803</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:44</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>58,53236</cpu>
+    <memory>9,117144</memory>
+    <network_rec>4,563582</network_rec>
+    <network_out>1,566909</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:45</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>28,70342</cpu>
+    <memory>9,117144</memory>
+    <network_rec>1,990927</network_rec>
+    <network_out>0,7913426</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:46</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>44,05521</cpu>
+    <memory>9,117144</memory>
+    <network_rec>7,964832</network_rec>
+    <network_out>3,514936</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:47</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>67,56555</cpu>
+    <memory>9,117144</memory>
+    <network_rec>642,2045</network_rec>
+    <network_out>26,80818</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:48</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>56,92664</cpu>
+    <memory>9,117144</memory>
+    <network_rec>1783,107</network_rec>
+    <network_out>38,10867</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:49</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>40,69621</cpu>
+    <memory>9,117144</memory>
+    <network_rec>248,5102</network_rec>
+    <network_out>11,56056</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:50</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>21,68675</cpu>
+    <memory>9,117144</memory>
+    <network_rec>15,40444</network_rec>
+    <network_out>2,249189</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:51</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>27,53499</cpu>
+    <memory>9,117144</memory>
+    <network_rec>36,85799</network_rec>
+    <network_out>4,53439</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:52</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>43,1527</cpu>
+    <memory>9,117144</memory>
+    <network_rec>158,7721</network_rec>
+    <network_out>5,170528</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:53</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>53,99176</cpu>
+    <memory>9,117144</memory>
+    <network_rec>264,8352</network_rec>
+    <network_out>13,29116</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:54</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>43,0626</cpu>
+    <memory>9,117144</memory>
+    <network_rec>729,8608</network_rec>
+    <network_out>10,15942</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:55</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>28,26262</cpu>
+    <memory>9,117144</memory>
+    <network_rec>143,1429</network_rec>
+    <network_out>4,444007</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:56</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>10,86143</cpu>
+    <memory>9,117144</memory>
+    <network_rec>0</network_rec>
+    <network_out>0,05326144</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:57</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>21,95776</cpu>
+    <memory>9,117144</memory>
+    <network_rec>7,340209</network_rec>
+    <network_out>5,149281</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:58</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>28,7591</cpu>
+    <memory>9,117144</memory>
+    <network_rec>3,123669</network_rec>
+    <network_out>8,405799</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:14:59</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>67,2605</cpu>
+    <memory>9,117014</memory>
+    <network_rec>24,94499</network_rec>
+    <network_out>2,402767</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:00</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>64,00389</cpu>
+    <memory>9,11697</memory>
+    <network_rec>2,553359</network_rec>
+    <network_out>3,737884</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:01</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>11,46451</cpu>
+    <memory>9,11697</memory>
+    <network_rec>0,1102205</network_rec>
+    <network_out>0,07354398</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:02</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>32,06397</cpu>
+    <memory>9,116927</memory>
+    <network_rec>0</network_rec>
+    <network_out>0,07284444</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:03</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>10,83187</cpu>
+    <memory>9,116927</memory>
+    <network_rec>0,1267143</network_rec>
+    <network_out>0,2945223</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:04</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>12,25664</cpu>
+    <memory>9,116927</memory>
+    <network_rec>0,0639302</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:05</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>19,77441</cpu>
+    <memory>9,116927</memory>
+    <network_rec>0,05422963</network_rec>
+    <network_out>0,3592514</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:06</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>18,24287</cpu>
+    <memory>9,116927</memory>
+    <network_rec>0,8480666</network_rec>
+    <network_out>0,2801083</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:07</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>23,22046</cpu>
+    <memory>9,116927</memory>
+    <network_rec>0</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:08</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>27,72706</cpu>
+    <memory>9,116927</memory>
+    <network_rec>0,4350227</network_rec>
+    <network_out>0,3886875</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:09</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>17,39495</cpu>
+    <memory>9,116927</memory>
+    <network_rec>0,4844742</network_rec>
+    <network_out>0,2167465</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:10</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>22,8707</cpu>
+    <memory>9,116927</memory>
+    <network_rec>0,1366303</network_rec>
+    <network_out>0,4582639</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:11</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>14,71623</cpu>
+    <memory>9,116927</memory>
+    <network_rec>0,4981453</network_rec>
+    <network_out>1,040961</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:12</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>26,74395</cpu>
+    <memory>9,116927</memory>
+    <network_rec>96,55772</network_rec>
+    <network_out>6,316469</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:14</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>48,59091</cpu>
+    <memory>9,116927</memory>
+    <network_rec>8,615148</network_rec>
+    <network_out>5,154635</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:15</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>17,60095</cpu>
+    <memory>9,116927</memory>
+    <network_rec>3,623626</network_rec>
+    <network_out>5,738116</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:16</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>43,7542</cpu>
+    <memory>9,116927</memory>
+    <network_rec>125,6428</network_rec>
+    <network_out>11,88486</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:17</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>28,37293</cpu>
+    <memory>9,116927</memory>
+    <network_rec>4,345919</network_rec>
+    <network_out>3,123616</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:18</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>14,57482</cpu>
+    <memory>9,116927</memory>
+    <network_rec>3,27275</network_rec>
+    <network_out>1,351873</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:19</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>17,19922</cpu>
+    <memory>9,116927</memory>
+    <network_rec>6,625218</network_rec>
+    <network_out>5,174187</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:20</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>16,00512</cpu>
+    <memory>9,116883</memory>
+    <network_rec>0,1103156</network_rec>
+    <network_out>3,643022</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:21</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>26,06557</cpu>
+    <memory>9,116883</memory>
+    <network_rec>0,0541925</network_rec>
+    <network_out>0,07364685</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:22</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>31,7721</cpu>
+    <memory>9,116883</memory>
+    <network_rec>0</network_rec>
+    <network_out>0,2314825</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:23</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>40,41235</cpu>
+    <memory>9,11684</memory>
+    <network_rec>2,686769</network_rec>
+    <network_out>4,567854</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:24</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>53,72013</cpu>
+    <memory>9,115365</memory>
+    <network_rec>0,5316627</network_rec>
+    <network_out>3,207826</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:25</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>21,43133</cpu>
+    <memory>9,115365</memory>
+    <network_rec>96,96129</network_rec>
+    <network_out>17,20965</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:26</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>16,6292</cpu>
+    <memory>9,115365</memory>
+    <network_rec>499,1603</network_rec>
+    <network_out>16,67919</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:27</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>11,4142</cpu>
+    <memory>9,115365</memory>
+    <network_rec>257,1913</network_rec>
+    <network_out>8,340323</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:28</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>15,09876</cpu>
+    <memory>9,115365</memory>
+    <network_rec>95,92362</network_rec>
+    <network_out>3,293315</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:29</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>21,47769</cpu>
+    <memory>9,115365</memory>
+    <network_rec>181,8739</network_rec>
+    <network_out>21,74919</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:30</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>47,37871</cpu>
+    <memory>9,115365</memory>
+    <network_rec>483,144</network_rec>
+    <network_out>16,46512</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:31</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>43,20565</cpu>
+    <memory>9,115365</memory>
+    <network_rec>501,4658</network_rec>
+    <network_out>13,40687</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:32</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>48,69248</cpu>
+    <memory>9,115365</memory>
+    <network_rec>0,1279037</network_rec>
+    <network_out>0,249062</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:33</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>43,4533</cpu>
+    <memory>9,115365</memory>
+    <network_rec>0,3660119</network_rec>
+    <network_out>0,2129623</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:34</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>42,61665</cpu>
+    <memory>9,115365</memory>
+    <network_rec>0,3193799</network_rec>
+    <network_out>0,2658254</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:35</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>21,66071</cpu>
+    <memory>9,115321</memory>
+    <network_rec>0,7788993</network_rec>
+    <network_out>0,6354033</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:36</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>16,33162</cpu>
+    <memory>9,115321</memory>
+    <network_rec>27,69651</network_rec>
+    <network_out>4,583498</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:37</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>7,794856</cpu>
+    <memory>9,115321</memory>
+    <network_rec>13,50517</network_rec>
+    <network_out>2,582415</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:38</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>12,11852</cpu>
+    <memory>9,115321</memory>
+    <network_rec>4,9808</network_rec>
+    <network_out>5,498905</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:39</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>30,27014</cpu>
+    <memory>9,115321</memory>
+    <network_rec>13,05219</network_rec>
+    <network_out>10,29753</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:40</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>47,88541</cpu>
+    <memory>9,115321</memory>
+    <network_rec>42,63218</network_rec>
+    <network_out>12,78512</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:41</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>79,52845</cpu>
+    <memory>9,115321</memory>
+    <network_rec>317,205</network_rec>
+    <network_out>58,249</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:42</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>83,39119</cpu>
+    <memory>9,115321</memory>
+    <network_rec>610,4477</network_rec>
+    <network_out>47,01956</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:43</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>55,46413</cpu>
+    <memory>9,115321</memory>
+    <network_rec>383,1729</network_rec>
+    <network_out>39,18843</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:44</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>87,72211</cpu>
+    <memory>9,115321</memory>
+    <network_rec>703,943</network_rec>
+    <network_out>46,72106</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:45</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>84,11248</cpu>
+    <memory>9,115321</memory>
+    <network_rec>780,2074</network_rec>
+    <network_out>54,82287</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:46</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>61,9163</cpu>
+    <memory>9,115278</memory>
+    <network_rec>443,7612</network_rec>
+    <network_out>90,64583</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:47</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>56,92873</cpu>
+    <memory>9,115278</memory>
+    <network_rec>573,2432</network_rec>
+    <network_out>39,19492</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:48</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>46,36429</cpu>
+    <memory>9,115278</memory>
+    <network_rec>560,9844</network_rec>
+    <network_out>48,1797</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:49</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>15,21456</cpu>
+    <memory>9,115278</memory>
+    <network_rec>176,2739</network_rec>
+    <network_out>7,94141</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:50</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>52,04429</cpu>
+    <memory>9,115278</memory>
+    <network_rec>1317,452</network_rec>
+    <network_out>45,65536</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:51</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>25,75547</cpu>
+    <memory>9,115278</memory>
+    <network_rec>364,6645</network_rec>
+    <network_out>33,75679</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:52</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>44,29467</cpu>
+    <memory>9,115278</memory>
+    <network_rec>461,8851</network_rec>
+    <network_out>38,47117</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:53</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>76,35186</cpu>
+    <memory>9,115278</memory>
+    <network_rec>475,696</network_rec>
+    <network_out>50,56965</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:54</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>59,56025</cpu>
+    <memory>9,115278</memory>
+    <network_rec>997,7028</network_rec>
+    <network_out>44,40973</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:55</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>51,62704</cpu>
+    <memory>9,114757</memory>
+    <network_rec>180,9304</network_rec>
+    <network_out>32,66189</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:56</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>72,31059</cpu>
+    <memory>9,114714</memory>
+    <network_rec>6,608795</network_rec>
+    <network_out>31,88421</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:57</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>33,01926</cpu>
+    <memory>9,114714</memory>
+    <network_rec>0,8450056</network_rec>
+    <network_out>0,05230327</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:58</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>10,4888</cpu>
+    <memory>9,114627</memory>
+    <network_rec>0,06393743</network_rec>
+    <network_out>0,2625212</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:15:59</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>21,29597</cpu>
+    <memory>9,114627</memory>
+    <network_rec>0,3052818</network_rec>
+    <network_out>0,5456214</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:00</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>35,3031</cpu>
+    <memory>9,114627</memory>
+    <network_rec>0,06393633</network_rec>
+    <network_out>0,4528454</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:01</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>14,64048</cpu>
+    <memory>9,114627</memory>
+    <network_rec>0,2375487</network_rec>
+    <network_out>0,2619829</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:02</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>21,33636</cpu>
+    <memory>9,114627</memory>
+    <network_rec>0</network_rec>
+    <network_out>0,1269058</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:03</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>19,76636</cpu>
+    <memory>9,114627</memory>
+    <network_rec>1,039484</network_rec>
+    <network_out>0,3254096</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:04</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>31,84645</cpu>
+    <memory>9,114627</memory>
+    <network_rec>0,2111262</network_rec>
+    <network_out>0,7970272</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:05</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>23,6243</cpu>
+    <memory>9,114583</memory>
+    <network_rec>0,5591894</network_rec>
+    <network_out>2,86228</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:06</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>34,91307</cpu>
+    <memory>9,114583</memory>
+    <network_rec>16,60687</network_rec>
+    <network_out>6,659748</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:07</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>31,14614</cpu>
+    <memory>9,114583</memory>
+    <network_rec>20,57586</network_rec>
+    <network_out>11,7146</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:08</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>22,47945</cpu>
+    <memory>9,114583</memory>
+    <network_rec>0,956836</network_rec>
+    <network_out>1,7695</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:09</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>25,97059</cpu>
+    <memory>9,114583</memory>
+    <network_rec>0,7239144</network_rec>
+    <network_out>1,169827</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:10</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>31,49704</cpu>
+    <memory>9,114583</memory>
+    <network_rec>0,4247014</network_rec>
+    <network_out>0,5227019</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:11</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>23,79775</cpu>
+    <memory>9,114583</memory>
+    <network_rec>0</network_rec>
+    <network_out>1,292594</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:12</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>58,43036</cpu>
+    <memory>9,356337</memory>
+    <network_rec>0,7856042</network_rec>
+    <network_out>0,6811301</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:13</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>29,31657</cpu>
+    <memory>9,356337</memory>
+    <network_rec>0,216758</network_rec>
+    <network_out>0,1725345</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:14</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>36,6653</cpu>
+    <memory>9,356207</memory>
+    <network_rec>6,645581</network_rec>
+    <network_out>5,809159</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:15</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>39,53697</cpu>
+    <memory>9,35612</memory>
+    <network_rec>10,17137</network_rec>
+    <network_out>5,456151</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:16</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>31,97551</cpu>
+    <memory>9,35612</memory>
+    <network_rec>0,1594552</network_rec>
+    <network_out>0,5663602</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:17</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>57,08583</cpu>
+    <memory>9,356076</memory>
+    <network_rec>73,59559</network_rec>
+    <network_out>22,91781</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:18</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>76,56377</cpu>
+    <memory>9,356033</memory>
+    <network_rec>35,4906</network_rec>
+    <network_out>16,32515</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:19</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>99,62234</cpu>
+    <memory>9,355642</memory>
+    <network_rec>13,84011</network_rec>
+    <network_out>12,9919</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:21</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>68,79682</cpu>
+    <memory>9,35408</memory>
+    <network_rec>8,990451</network_rec>
+    <network_out>4,452919</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:22</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>36,58436</cpu>
+    <memory>9,35395</memory>
+    <network_rec>17,10868</network_rec>
+    <network_out>9,353577</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:23</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>41,02015</cpu>
+    <memory>9,353646</memory>
+    <network_rec>1,434857</network_rec>
+    <network_out>0,2967601</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:24</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>19,9841</cpu>
+    <memory>9,353602</memory>
+    <network_rec>0,3285716</network_rec>
+    <network_out>0,2088508</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:25</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>16,44301</cpu>
+    <memory>9,353602</memory>
+    <network_rec>0,1905753</network_rec>
+    <network_out>0,1045082</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:26</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>14,04247</cpu>
+    <memory>9,353602</memory>
+    <network_rec>1,791298</network_rec>
+    <network_out>0,6629045</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:27</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>13,6706</cpu>
+    <memory>9,353602</memory>
+    <network_rec>2,776602</network_rec>
+    <network_out>0,2091058</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:28</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>37,76682</cpu>
+    <memory>9,353602</memory>
+    <network_rec>4,860208</network_rec>
+    <network_out>6,736761</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:29</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>27,18142</cpu>
+    <memory>9,353602</memory>
+    <network_rec>1,273633</network_rec>
+    <network_out>0,1353467</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:30</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>11,94666</cpu>
+    <memory>9,353602</memory>
+    <network_rec>0,3024333</network_rec>
+    <network_out>0,6074495</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:31</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>11,7085</cpu>
+    <memory>9,353559</memory>
+    <network_rec>0,3397924</network_rec>
+    <network_out>0,1171637</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:32</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>28,35324</cpu>
+    <memory>9,352951</memory>
+    <network_rec>0,3375703</network_rec>
+    <network_out>0,4457351</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:33</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>66,2862</cpu>
+    <memory>9,352951</memory>
+    <network_rec>0,1440633</network_rec>
+    <network_out>1,926749</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:34</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>51,22663</cpu>
+    <memory>9,352951</memory>
+    <network_rec>14,5504</network_rec>
+    <network_out>5,964449</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:35</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>52,42554</cpu>
+    <memory>9,352951</memory>
+    <network_rec>2,134781</network_rec>
+    <network_out>16,13691</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:36</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>87,46581</cpu>
+    <memory>9,341103</memory>
+    <network_rec>71,07964</network_rec>
+    <network_out>21,41457</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:37</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>100</cpu>
+    <memory>9,341103</memory>
+    <network_rec>17,95463</network_rec>
+    <network_out>17,27113</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:38</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>63,22043</cpu>
+    <memory>9,341103</memory>
+    <network_rec>14,90189</network_rec>
+    <network_out>10,51308</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:39</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>72,52125</cpu>
+    <memory>9,341103</memory>
+    <network_rec>20,80455</network_rec>
+    <network_out>8,346292</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:40</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>86,05333</cpu>
+    <memory>9,341103</memory>
+    <network_rec>12,58013</network_rec>
+    <network_out>13,24218</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:41</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>62,53586</cpu>
+    <memory>9,341103</memory>
+    <network_rec>10,715</network_rec>
+    <network_out>8,512784</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:42</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>14,39131</cpu>
+    <memory>9,341016</memory>
+    <network_rec>0,6303492</network_rec>
+    <network_out>2,040744</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:43</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>24,88025</cpu>
+    <memory>9,341016</memory>
+    <network_rec>0,0600368</network_rec>
+    <network_out>0,1365924</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:44</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>29,11466</cpu>
+    <memory>9,340972</memory>
+    <network_rec>8,078764</network_rec>
+    <network_out>7,737271</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:45</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>86,12197</cpu>
+    <memory>9,340798</memory>
+    <network_rec>22,94227</network_rec>
+    <network_out>11,81385</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:46</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>70,51389</cpu>
+    <memory>9,340798</memory>
+    <network_rec>6,270909</network_rec>
+    <network_out>6,569</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:47</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>16,94467</cpu>
+    <memory>9,340798</memory>
+    <network_rec>0,8174777</network_rec>
+    <network_out>3,614513</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:48</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>12,10216</cpu>
+    <memory>9,340798</memory>
+    <network_rec>5,637596</network_rec>
+    <network_out>4,231204</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:49</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>19,36263</cpu>
+    <memory>9,340669</memory>
+    <network_rec>0</network_rec>
+    <network_out>0,07355148</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:50</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>13,34815</cpu>
+    <memory>9,340669</memory>
+    <network_rec>1,834133</network_rec>
+    <network_out>5,218992</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:51</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>11,6745</cpu>
+    <memory>9,340669</memory>
+    <network_rec>1,420893</network_rec>
+    <network_out>2,41471</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:52</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>18,99831</cpu>
+    <memory>9,340669</memory>
+    <network_rec>0,06394376</network_rec>
+    <network_out>3,745132</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:53</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>24,48595</cpu>
+    <memory>9,307422</memory>
+    <network_rec>2,326656</network_rec>
+    <network_out>6,635057</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:54</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>23,25562</cpu>
+    <memory>9,307422</memory>
+    <network_rec>6,38061</network_rec>
+    <network_out>2,843246</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:55</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>8,913877</cpu>
+    <memory>9,307422</memory>
+    <network_rec>6,863373</network_rec>
+    <network_out>2,566472</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:56</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>17,80069</cpu>
+    <memory>9,307379</memory>
+    <network_rec>2,535521</network_rec>
+    <network_out>2,465158</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:57</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>64,73669</cpu>
+    <memory>9,301215</memory>
+    <network_rec>87,04887</network_rec>
+    <network_out>41,65295</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:58</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>59,78913</cpu>
+    <memory>9,291407</memory>
+    <network_rec>90,83344</network_rec>
+    <network_out>19,14536</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:16:59</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>80,70774</cpu>
+    <memory>9,290711</memory>
+    <network_rec>118,7342</network_rec>
+    <network_out>52,05167</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:00</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>94,24133</cpu>
+    <memory>9,290538</memory>
+    <network_rec>188,9485</network_rec>
+    <network_out>18,39569</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:01</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>39,89992</cpu>
+    <memory>9,290538</memory>
+    <network_rec>8,893889</network_rec>
+    <network_out>6,650797</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:02</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>26,81528</cpu>
+    <memory>9,290538</memory>
+    <network_rec>8,24913</network_rec>
+    <network_out>5,454088</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:03</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>39,51028</cpu>
+    <memory>9,390538</memory>
+    <network_rec>0,7109713</network_rec>
+    <network_out>1,522975</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:04</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>16,34319</cpu>
+    <memory>9,390451</memory>
+    <network_rec>1,060073</network_rec>
+    <network_out>7,471173</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:05</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>12,78883</cpu>
+    <memory>9,390451</memory>
+    <network_rec>4,482886</network_rec>
+    <network_out>7,04081</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:06</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>9,662668</cpu>
+    <memory>9,390451</memory>
+    <network_rec>0,2345205</network_rec>
+    <network_out>1,029328</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:07</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>13,55353</cpu>
+    <memory>9,390365</memory>
+    <network_rec>14,3693</network_rec>
+    <network_out>5,554324</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:08</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>13,26571</cpu>
+    <memory>9,390365</memory>
+    <network_rec>0,5793316</network_rec>
+    <network_out>2,745334</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:09</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>16,67763</cpu>
+    <memory>9,390365</memory>
+    <network_rec>8,208895</network_rec>
+    <network_out>2,616211</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:10</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>16,71164</cpu>
+    <memory>9,390365</memory>
+    <network_rec>0</network_rec>
+    <network_out>0,3874076</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:11</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>20,66987</cpu>
+    <memory>9,390365</memory>
+    <network_rec>2,005404</network_rec>
+    <network_out>3,045299</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:12</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>7,701403</cpu>
+    <memory>9,390365</memory>
+    <network_rec>3,959522</network_rec>
+    <network_out>1,12885</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:13</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>18,35725</cpu>
+    <memory>9,390365</memory>
+    <network_rec>1,405656</network_rec>
+    <network_out>2,801569</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:14</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>16,22368</cpu>
+    <memory>9,390365</memory>
+    <network_rec>0,4747751</network_rec>
+    <network_out>0,4763919</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:15</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>9,223691</cpu>
+    <memory>9,390365</memory>
+    <network_rec>0,3971196</network_rec>
+    <network_out>0,3188012</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:16</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>15,85483</cpu>
+    <memory>9,390365</memory>
+    <network_rec>0,06398519</network_rec>
+    <network_out>0,3771726</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:17</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>13,5621</cpu>
+    <memory>9,390365</memory>
+    <network_rec>0,1366193</network_rec>
+    <network_out>0,05225599</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:18</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>14,4488</cpu>
+    <memory>9,390365</memory>
+    <network_rec>0</network_rec>
+    <network_out>0,3176715</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:19</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>28,83839</cpu>
+    <memory>9,390365</memory>
+    <network_rec>0,2552993</network_rec>
+    <network_out>0,5357798</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:20</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>22,14747</cpu>
+    <memory>9,390321</memory>
+    <network_rec>0,9588088</network_rec>
+    <network_out>0,78855</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:21</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>55,48094</cpu>
+    <memory>9,390321</memory>
+    <network_rec>41,03167</network_rec>
+    <network_out>29,3754</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:22</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>65,44292</cpu>
+    <memory>9,390321</memory>
+    <network_rec>399,6317</network_rec>
+    <network_out>54,96546</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:23</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>39,17714</cpu>
+    <memory>9,390321</memory>
+    <network_rec>6,66738</network_rec>
+    <network_out>7,335515</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:24</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>22,10298</cpu>
+    <memory>9,390321</memory>
+    <network_rec>374,7743</network_rec>
+    <network_out>50,39792</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:25</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>20,64534</cpu>
+    <memory>9,390321</memory>
+    <network_rec>112,4693</network_rec>
+    <network_out>31,78187</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:26</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>13,89863</cpu>
+    <memory>9,390321</memory>
+    <network_rec>1,073376</network_rec>
+    <network_out>0,3906023</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:27</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>11,68233</cpu>
+    <memory>9,390104</memory>
+    <network_rec>12,61312</network_rec>
+    <network_out>4,804133</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:28</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>11,72899</cpu>
+    <memory>9,389974</memory>
+    <network_rec>5,137493</network_rec>
+    <network_out>6,840367</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:29</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>12,16718</cpu>
+    <memory>9,389974</memory>
+    <network_rec>1,666733</network_rec>
+    <network_out>1,53395</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:30</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>12,78397</cpu>
+    <memory>9,389974</memory>
+    <network_rec>0,1376195</network_rec>
+    <network_out>0,5805323</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:31</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>7,760468</cpu>
+    <memory>9,389974</memory>
+    <network_rec>2,092477</network_rec>
+    <network_out>1,790586</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:32</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>45,87715</cpu>
+    <memory>9,389366</memory>
+    <network_rec>135,9083</network_rec>
+    <network_out>4,645261</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:33</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>20,17123</cpu>
+    <memory>9,389366</memory>
+    <network_rec>403,0317</network_rec>
+    <network_out>24,98168</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:34</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>25,17038</cpu>
+    <memory>9,389323</memory>
+    <network_rec>1030,57</network_rec>
+    <network_out>25,39544</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:35</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>19,46497</cpu>
+    <memory>9,389193</memory>
+    <network_rec>623,1151</network_rec>
+    <network_out>39,60663</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:37</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>16,49249</cpu>
+    <memory>9,38915</memory>
+    <network_rec>909,762</network_rec>
+    <network_out>26,56284</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:38</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>16,56599</cpu>
+    <memory>9,38915</memory>
+    <network_rec>555,1789</network_rec>
+    <network_out>13,61656</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:39</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>11,77751</cpu>
+    <memory>9,38915</memory>
+    <network_rec>49,23284</network_rec>
+    <network_out>2,187442</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:40</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>15,25539</cpu>
+    <memory>9,38915</memory>
+    <network_rec>0</network_rec>
+    <network_out>0,3963976</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:41</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>32,96096</cpu>
+    <memory>9,38915</memory>
+    <network_rec>6,351552</network_rec>
+    <network_out>9,266352</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:42</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>41,18508</cpu>
+    <memory>9,38915</memory>
+    <network_rec>0</network_rec>
+    <network_out>0,3235908</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:43</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>51,18019</cpu>
+    <memory>9,38915</memory>
+    <network_rec>3,670572</network_rec>
+    <network_out>3,509791</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:44</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>50,57141</cpu>
+    <memory>9,38915</memory>
+    <network_rec>5,427238</network_rec>
+    <network_out>2,770752</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:45</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>41,55468</cpu>
+    <memory>9,38915</memory>
+    <network_rec>2,320065</network_rec>
+    <network_out>2,715919</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:46</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>17,88627</cpu>
+    <memory>9,38915</memory>
+    <network_rec>4,503257</network_rec>
+    <network_out>3,320289</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:47</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>14,84108</cpu>
+    <memory>9,389063</memory>
+    <network_rec>7,53569</network_rec>
+    <network_out>6,961179</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:48</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>15,54923</cpu>
+    <memory>9,389063</memory>
+    <network_rec>17,80826</network_rec>
+    <network_out>23,63527</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:49</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>12,01135</cpu>
+    <memory>9,389063</memory>
+    <network_rec>12,84673</network_rec>
+    <network_out>7,959169</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:50</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>10,43002</cpu>
+    <memory>9,389019</memory>
+    <network_rec>14,77787</network_rec>
+    <network_out>14,43866</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:51</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>17,52255</cpu>
+    <memory>9,426996</memory>
+    <network_rec>7,920386</network_rec>
+    <network_out>8,446689</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:52</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>13,32334</cpu>
+    <memory>9,426996</memory>
+    <network_rec>1,15187</network_rec>
+    <network_out>8,142708</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:53</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>12,65831</cpu>
+    <memory>9,426996</memory>
+    <network_rec>29,12035</network_rec>
+    <network_out>21,01354</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:54</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>41,12734</cpu>
+    <memory>9,426953</memory>
+    <network_rec>0,05421974</network_rec>
+    <network_out>1,02729</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:55</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>21,71615</cpu>
+    <memory>9,426953</memory>
+    <network_rec>15,63055</network_rec>
+    <network_out>15,20646</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:56</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>18,39342</cpu>
+    <memory>9,426953</memory>
+    <network_rec>71,34782</network_rec>
+    <network_out>6,858206</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:57</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>12,63162</cpu>
+    <memory>9,426953</memory>
+    <network_rec>1,045508</network_rec>
+    <network_out>0,246123</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:58</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>18,62942</cpu>
+    <memory>9,426953</memory>
+    <network_rec>7,12076</network_rec>
+    <network_out>8,529524</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:17:59</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>14,45742</cpu>
+    <memory>9,426909</memory>
+    <network_rec>0,4655291</network_rec>
+    <network_out>0,8860235</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:00</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>28,92752</cpu>
+    <memory>9,426909</memory>
+    <network_rec>2,004887</network_rec>
+    <network_out>4,602512</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:01</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>34,78583</cpu>
+    <memory>9,426909</memory>
+    <network_rec>7,734303</network_rec>
+    <network_out>7,637206</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:02</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>13,13485</cpu>
+    <memory>9,426909</memory>
+    <network_rec>2,349079</network_rec>
+    <network_out>0,7304749</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:03</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>13,47985</cpu>
+    <memory>9,426909</memory>
+    <network_rec>0,1622499</network_rec>
+    <network_out>0,4075172</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:04</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>38,05784</cpu>
+    <memory>9,426909</memory>
+    <network_rec>0,1820895</network_rec>
+    <network_out>0,1703756</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:05</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>18,71202</cpu>
+    <memory>9,426909</memory>
+    <network_rec>0,1595852</network_rec>
+    <network_out>0,825079</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:06</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>10,30371</cpu>
+    <memory>9,426909</memory>
+    <network_rec>0,2040491</network_rec>
+    <network_out>0,2515871</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:07</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>13,50975</cpu>
+    <memory>9,426909</memory>
+    <network_rec>0,06399384</network_rec>
+    <network_out>0,5352785</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:08</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>10,78272</cpu>
+    <memory>9,426909</memory>
+    <network_rec>70,04005</network_rec>
+    <network_out>16,46076</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:09</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>10,14977</cpu>
+    <memory>9,426909</memory>
+    <network_rec>5,87886</network_rec>
+    <network_out>2,634368</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:10</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>12,81755</cpu>
+    <memory>9,426909</memory>
+    <network_rec>0,3827354</network_rec>
+    <network_out>0,3391954</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:11</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>8,900858</cpu>
+    <memory>9,426909</memory>
+    <network_rec>0</network_rec>
+    <network_out>0,407652</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:12</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>10,13951</cpu>
+    <memory>9,426909</memory>
+    <network_rec>0,5039041</network_rec>
+    <network_out>1,491573</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:13</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>12,36932</cpu>
+    <memory>9,426909</memory>
+    <network_rec>67,62724</network_rec>
+    <network_out>3,235895</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:14</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>26,00116</cpu>
+    <memory>9,426909</memory>
+    <network_rec>1,338395</network_rec>
+    <network_out>3,636787</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:15</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>29,45576</cpu>
+    <memory>9,426909</memory>
+    <network_rec>0,3410998</network_rec>
+    <network_out>0,620039</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:16</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>9,612007</cpu>
+    <memory>9,426909</memory>
+    <network_rec>0,3561183</network_rec>
+    <network_out>0,1060969</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:17</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>12,10799</cpu>
+    <memory>9,426909</memory>
+    <network_rec>0,5385031</network_rec>
+    <network_out>1,022524</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:18</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>15,12928</cpu>
+    <memory>9,426823</memory>
+    <network_rec>0,06394812</network_rec>
+    <network_out>0,1269333</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:19</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>59,68264</cpu>
+    <memory>9,425564</memory>
+    <network_rec>0,5291769</network_rec>
+    <network_out>1,593512</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:20</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>22,86071</cpu>
+    <memory>9,424566</memory>
+    <network_rec>5,205623</network_rec>
+    <network_out>0,8262428</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:21</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>15,18805</cpu>
+    <memory>9,424393</memory>
+    <network_rec>0</network_rec>
+    <network_out>0,3950324</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:22</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>19,07249</cpu>
+    <memory>9,424393</memory>
+    <network_rec>0,0639272</network_rec>
+    <network_out>0,05327581</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:23</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>20,12397</cpu>
+    <memory>9,424262</memory>
+    <network_rec>0</network_rec>
+    <network_out>0,3868038</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:24</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>24,02249</cpu>
+    <memory>9,424262</memory>
+    <network_rec>0,4185155</network_rec>
+    <network_out>0,3892466</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:25</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>34,91998</cpu>
+    <memory>9,424262</memory>
+    <network_rec>0,2059741</network_rec>
+    <network_out>0,4482774</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:26</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>20,5321</cpu>
+    <memory>9,424219</memory>
+    <network_rec>0,09848623</network_rec>
+    <network_out>0,0521654</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:27</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>28,8229</cpu>
+    <memory>9,424175</memory>
+    <network_rec>0,1103209</network_rec>
+    <network_out>0,3972034</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:28</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>35,28168</cpu>
+    <memory>9,424175</memory>
+    <network_rec>0,06395034</network_rec>
+    <network_out>0,1065963</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:29</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>27,51274</cpu>
+    <memory>9,424175</memory>
+    <network_rec>8,201034</network_rec>
+    <network_out>4,78115</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:30</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>13,15251</cpu>
+    <memory>9,424132</memory>
+    <network_rec>8,490499</network_rec>
+    <network_out>3,943024</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:31</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>6,821106</cpu>
+    <memory>9,424132</memory>
+    <network_rec>1,06781</network_rec>
+    <network_out>2,791633</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:32</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>15,90445</cpu>
+    <memory>9,424132</memory>
+    <network_rec>0,06395235</network_rec>
+    <network_out>0,05324833</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:33</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>43,47875</cpu>
+    <memory>9,31645</memory>
+    <network_rec>4,789544</network_rec>
+    <network_out>1,304341</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:34</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>31,10849</cpu>
+    <memory>9,31645</memory>
+    <network_rec>0,6670059</network_rec>
+    <network_out>0,8986341</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:35</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>24,10679</cpu>
+    <memory>9,316362</memory>
+    <network_rec>0,8340303</network_rec>
+    <network_out>0,7335936</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:36</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>64,63834</cpu>
+    <memory>9,315886</memory>
+    <network_rec>0,4452948</network_rec>
+    <network_out>0,4111474</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:37</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>30,57205</cpu>
+    <memory>9,315886</memory>
+    <network_rec>0,1270994</network_rec>
+    <network_out>0,4292791</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:38</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>12,08609</cpu>
+    <memory>9,315842</memory>
+    <network_rec>0,7131661</network_rec>
+    <network_out>2,181327</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:39</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>31,3795</cpu>
+    <memory>9,315668</memory>
+    <network_rec>0,07366596</network_rec>
+    <network_out>0,323595</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:40</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>12,46841</cpu>
+    <memory>9,315538</memory>
+    <network_rec>0</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:41</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>16,32797</cpu>
+    <memory>9,315495</memory>
+    <network_rec>0,1104252</network_rec>
+    <network_out>0,3230595</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:42</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>12,18774</cpu>
+    <memory>9,315452</memory>
+    <network_rec>5,9532</network_rec>
+    <network_out>3,812558</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:43</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>34,84566</cpu>
+    <memory>9,315278</memory>
+    <network_rec>4,139083</network_rec>
+    <network_out>3,758592</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:44</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>27,35867</cpu>
+    <memory>9,315234</memory>
+    <network_rec>0,05399208</network_rec>
+    <network_out>0,1735497</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:45</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>21,89986</cpu>
+    <memory>9,314236</memory>
+    <network_rec>0</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:46</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>99,64268</cpu>
+    <memory>9,155425</memory>
+    <network_rec>0</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:47</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>100</cpu>
+    <memory>8,833507</memory>
+    <network_rec>0</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:48</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>100</cpu>
+    <memory>8,826172</memory>
+    <network_rec>0</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:51</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>68,80972</cpu>
+    <memory>9,525695</memory>
+    <network_rec>0</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:52</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>69,79287</cpu>
+    <memory>9,52526</memory>
+    <network_rec>1,664389</network_rec>
+    <network_out>5,910604</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:53</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>45,24927</cpu>
+    <memory>9,52526</memory>
+    <network_rec>9,628712</network_rec>
+    <network_out>10,08262</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:54</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>34,96177</cpu>
+    <memory>9,52526</memory>
+    <network_rec>68,32688</network_rec>
+    <network_out>27,46113</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:55</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>72,76344</cpu>
+    <memory>9,479427</memory>
+    <network_rec>47,79417</network_rec>
+    <network_out>25,60625</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:56</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>65,9693</cpu>
+    <memory>9,478298</memory>
+    <network_rec>14,57827</network_rec>
+    <network_out>7,603977</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:57</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>58,92798</cpu>
+    <memory>9,477214</memory>
+    <network_rec>1,207036</network_rec>
+    <network_out>3,681309</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:58</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>55,25315</cpu>
+    <memory>9,476302</memory>
+    <network_rec>43,71662</network_rec>
+    <network_out>6,726112</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:18:59</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>80,31029</cpu>
+    <memory>9,475434</memory>
+    <network_rec>94,06074</network_rec>
+    <network_out>26,1609</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:19:00</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>60,64218</cpu>
+    <memory>9,475348</memory>
+    <network_rec>16,80474</network_rec>
+    <network_out>26,71407</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:19:01</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>33,17517</cpu>
+    <memory>9,475217</memory>
+    <network_rec>10,49494</network_rec>
+    <network_out>7,542439</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:19:02</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>20,64873</cpu>
+    <memory>9,475217</memory>
+    <network_rec>0,0536652</network_rec>
+    <network_out>2,12973</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:19:03</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>18,95151</cpu>
+    <memory>9,475217</memory>
+    <network_rec>0</network_rec>
+    <network_out>0,4304033</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:19:04</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>36,59511</cpu>
+    <memory>9,475174</memory>
+    <network_rec>0,5809312</network_rec>
+    <network_out>4,606694</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:19:05</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>80,70597</cpu>
+    <memory>9,475174</memory>
+    <network_rec>106,6446</network_rec>
+    <network_out>9,122592</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:19:06</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>31,95383</cpu>
+    <memory>9,473958</memory>
+    <network_rec>8,134007</network_rec>
+    <network_out>1,860958</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:19:07</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>14,45546</cpu>
+    <memory>9,473568</memory>
+    <network_rec>0</network_rec>
+    <network_out>8,223428</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:19:08</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>11,96706</cpu>
+    <memory>9,828385</memory>
+    <network_rec>0,6477194</network_rec>
+    <network_out>0,2782844</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:19:09</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>26,26432</cpu>
+    <memory>9,828256</memory>
+    <network_rec>4,611959</network_rec>
+    <network_out>2,826906</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:19:10</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>14,32419</cpu>
+    <memory>9,828256</memory>
+    <network_rec>0,6212609</network_rec>
+    <network_out>0,231649</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:19:11</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>18,21401</cpu>
+    <memory>9,827951</memory>
+    <network_rec>0</network_rec>
+    <network_out>0,1733961</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:19:12</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>12,40407</cpu>
+    <memory>9,825478</memory>
+    <network_rec>0</network_rec>
+    <network_out>0</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:19:13</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+  <genel_kullanim>
+    <cpu>9,375738</cpu>
+    <memory>9,825478</memory>
+    <network_rec>0,2416324</network_rec>
+    <network_out>0,6373005</network_out>
+    <io_rec>0</io_rec>
+    <io_out>0</io_out>
+    <datetime_>12.04.2019 05:19:14</datetime_>
+    <sync>False</sync>
+  </genel_kullanim>
+</NewDataSet>

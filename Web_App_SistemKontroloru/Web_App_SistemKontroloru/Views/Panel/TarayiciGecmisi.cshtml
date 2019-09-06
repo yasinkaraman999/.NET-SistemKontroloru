@@ -1,0 +1,152 @@
+﻿
+@using System.Data;
+
+@{
+    /**/
+
+    ViewBag.Title = "TarayiciGecmisi";
+    Layout = "~/Shared/Panel_1.cshtml";
+
+    int say = 0;
+    string time_ = "";
+
+    @model List<DataRow>
+
+
+}
+
+@{
+    if (Convert.ToByte(Session["bilgisayari_varmi"]) != 0)
+    {
+        <div class="page-fixed-main-content">
+
+            <div class="portlet light bordered">
+                <div class="portlet-title">
+                    <div class="caption font-dark">
+                        <i class="icon-settings font-dark"></i>
+                        <span class="caption-subject bold uppercase">Tarayıcı Geçmişi(Chrome)</span>
+
+                    </div>
+                    <div class="tools"> </div>
+                </div>
+                <div class="portlet-body">
+                    <div id="sample_1_wrapper" class="dataTables_wrapper">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="dt-buttons">
+                                    <span class="span10">elementler işlenecek</span>
+
+
+                                    <a href="@Url.Action("is_kaydi", "Panel", new { gorev = 8 })" class="dt-button buttons-print btn purple btn-outlin" onclick="return confirm('Eski kayıtlar yenileriyle değiştirilecek onaylıyor musunuz?')">Kayıtları Yenile</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                                <div class="dataTables_length" id="sample_1_length">
+                                    <label>
+                                        <select name="sample_1_length" aria-controls="sample_1" class="form-control input-sm input-xsmall input-inline" onchange="location = '/Panel/TarayiciGecmisi?adet=' + this.value">
+                                            <option @{ if (Request.QueryString["adet"] == "25") { string selc = "Selected"; @selc  } } value="25">25</option>
+                                            <option @{ if (Request.QueryString["adet"] == "50") { string selc = "Selected"; @selc  } } value="50">50</option>
+                                            <option @{ if (Request.QueryString["adet"] == "150") { string selc = "Selected"; @selc  } } value="150">150</option>
+                                            <option @{ if (Request.QueryString["adet"] == "500") { string selc = "Selected"; @selc  } } value="500">500</option>
+                                            <option @{ if (Request.QueryString["adet"] == "9999999") { string selc = "Selected"; @selc  } } value="9999999">Hepsi</option>
+                                        </select> Kayıt
+                                    </label>
+                                </div>
+                            </div><div class="col-md-6 col-sm-12">
+                                <div id="sample_1_filter" class="dataTables_filter">
+                                    <label>Search:<input type="text" class="search form-control input-sm input-small input-inline" placeholder="" aria-controls="sample_1"></label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="table-scrollable">
+                            <table class="results table table-striped table-bordered table-hover dataTable dtr-inline" id="sample_1" role="grid" aria-describedby="sample_1_info" style="width: 956px;">
+                                <thead>
+                                    <tr role="row">
+                                        <th>No.</th>
+                                        <th>Başlık</th>
+                                        <th>URL</th>
+                                        <th>Tarih</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @{ if (Model != null)
+                                        {
+                                            foreach (var item in Model)
+                                            {
+                                                say++;
+                                                <tr role="row" class="odd">
+                                                    <td>@say</td>
+                                                    <td width="300px;">
+                                                        @{
+                                                            if (item[1].ToString().Length < 30)//baslik
+                                                            {
+                                                                @item[1].ToString();
+                                                            }
+                                                            else
+                                                            {
+                                                                @item[1].ToString().Substring(0, 30);
+                                                                <span>...</span>
+                                                            }
+                                                        }
+                                                    </td>
+                                                    <td>
+                                                        <a href="@item[0].ToString()" target="_blank">
+
+                                                            @{
+                                                                if (item[0].ToString().Length < 100)
+                                                                {
+                                                                    @item[0].ToString();
+                                                                }
+                                                                else
+                                                                {
+                                                                    @item[0].ToString().Substring(0, 100);
+                                                                    <span>...</span>
+                                                                }
+                                                            }
+                                                        </a>
+                                                    </td>
+                                                    @{
+                                                        try
+                                                        {
+                                                            time_ = item[2].ToString();
+                                                            time_ = time_.Substring(0, 11);
+                                                            DateTime date_time = new DateTime(1601, 1, 1).AddSeconds(Convert.ToDouble(time_));
+                                                            <td width="150px;">@date_time</td>
+                                                        }
+                                                        catch (Exception e)
+                                                        {
+                                                            @e.Message
+                                                        }
+                                                    }
+
+                                                </tr>
+                                            }
+                                        }
+                                        else
+                                        {
+                                                <tr role="row" class="odd">
+                                                    <td width="150px;">Veri Yok</td>
+                                                    <td width="150px;">Veri Yok</td>
+                                                    <td width="150px;">Veri Yok</td>
+                                                    <td width="150px;">Veri Yok</td>
+                                                </tr>
+                                        }
+                                    }
+
+                                </tbody>
+                            </table>
+                        </div><div class="row"><div class="col-md-5 col-sm-12"><div class="dataTables_info" id="sample_1_info" role="status" aria-live="polite">Showing 1 to 10 of 56 entries (filtered1 from 57 total entries)</div></div><div class="col-md-7 col-sm-12"><div class="dataTables_paginate paging_bootstrap_number" id="sample_1_paginate"><ul class="pagination" style="visibility: visible;"><li class="prev disabled"><a href="#" title="Prev"><i class="fa fa-angle-left"></i></a></li><li class="active"><a href="#">1</a></li><li><a href="#">2</a></li><li><a href="#">3</a></li><li><a href="#">4</a></li><li><a href="#">5</a></li><li class="next"><a href="#" title="Next"><i class="fa fa-angle-right"></i></a></li></ul></div></div></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    }
+    else
+    {
+        <h1 class="text-center">Bilgisayar Eklediğinizde Aktif Olacağız</h1>
+    }
+}

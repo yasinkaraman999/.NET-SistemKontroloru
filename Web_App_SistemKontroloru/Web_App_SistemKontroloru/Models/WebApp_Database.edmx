@@ -1,0 +1,552 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="admin_WebApp_DatabaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="App_Usage">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Hardware_Id" Type="varchar" MaxLength="100" />
+          <Property Name="Process_Name" Type="varchar" MaxLength="200" />
+          <Property Name="Process_Windows_Title" Type="text" />
+          <Property Name="Cpu" Type="float" />
+          <Property Name="Memory" Type="float" />
+          <Property Name="Network_Rec" Type="float" />
+          <Property Name="Network_Out" Type="float" />
+          <Property Name="IO_Read" Type="float" />
+          <Property Name="IO_Write" Type="float" />
+          <Property Name="Datetime_" Type="datetime" />
+          <Property Name="Sync" Type="bit" />
+        </EntityType>
+        <EntityType Name="Banned_App">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Hardware_Id" Type="varchar" MaxLength="100" />
+          <Property Name="P_Name" Type="varchar" MaxLength="300" />
+          <Property Name="Title_" Type="varchar" MaxLength="500" />
+          <Property Name="Datetime_" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Browser_Histories">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Hardware_Id" Type="varchar" MaxLength="100" />
+          <Property Name="Title_" Type="text" />
+          <Property Name="Url_" Type="text" />
+          <Property Name="Sync_Time_" Type="datetime" />
+        </EntityType>
+        <EntityType Name="cmd_output_">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Hardware_Id" Type="varchar" MaxLength="100" />
+          <Property Name="Query_" Type="varchar" MaxLength="100" />
+          <Property Name="CMD_Output_Text" Type="text" />
+          <Property Name="Datetime_" Type="datetime" />
+          <Property Name="Status_" Type="bit" />
+        </EntityType>
+        <EntityType Name="PC_App_Locations">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Hardware_Id" Type="varchar" MaxLength="100" />
+          <Property Name="App_Name" Type="varchar" MaxLength="100" />
+          <Property Name="Process_Name_" Type="varchar" MaxLength="200" />
+          <Property Name="Folder_" Type="varchar" MaxLength="200" />
+          <Property Name="Datetime_" Type="datetime" />
+        </EntityType>
+        <EntityType Name="PC_Details">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="User_Id" Type="int" Nullable="false" />
+          <Property Name="Hardware_Id" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Bg_Url" Type="varchar" MaxLength="1000" />
+          <Property Name="Domain_User_Name" Type="varchar" MaxLength="500" />
+          <Property Name="Version_" Type="varchar" MaxLength="100" />
+          <Property Name="Memory_Size_Gb" Type="float" />
+          <Property Name="Processor_Name" Type="varchar" MaxLength="250" />
+          <Property Name="Motherboard_Info" Type="varchar" MaxLength="250" />
+          <Property Name="Time_Limit_Minutes" Type="int" />
+          <Property Name="Time_" Type="datetime" />
+          <Property Name="Status_" Type="bit" />
+          <Property Name="Last_Sync" Type="datetime" />
+          <Property Name="Online" Type="bit" />
+        </EntityType>
+        <EntityType Name="PC_Running_Apps">
+          <Key>
+            <PropertyRef Name="int" />
+          </Key>
+          <Property Name="int" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Hardware_id" Type="varchar" MaxLength="100" />
+          <Property Name="Name_" Type="varchar" MaxLength="100" />
+          <Property Name="Title_" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="Screen_Capture">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Hardware_Id" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Img_Url" Type="varchar" MaxLength="250" />
+          <Property Name="Datetime_" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Screen_Record">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Hardware_Id" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Video_Url" Type="varchar" MaxLength="100" />
+          <Property Name="Datetime_" Type="datetime" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="System_Usage">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Hardware_Id" Type="varchar" MaxLength="100" />
+          <Property Name="Cpu" Type="float" />
+          <Property Name="Memory" Type="float" />
+          <Property Name="Network_Rec" Type="float" />
+          <Property Name="Network_Out" Type="float" />
+          <Property Name="IO_Read" Type="float" />
+          <Property Name="IO_Write" Type="float" />
+          <Property Name="Datetime_" Type="datetime" />
+          <Property Name="Sync" Type="bit" />
+        </EntityType>
+        <EntityType Name="User_Details">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="User_Name" Type="varchar" MaxLength="100" />
+          <Property Name="User_Pass" Type="varchar" MaxLength="100" />
+          <Property Name="Name" Type="varchar" MaxLength="100" />
+          <Property Name="Surname" Type="varchar" MaxLength="100" />
+          <Property Name="Email" Type="varchar" MaxLength="100" />
+          <Property Name="Last_Login" Type="datetime" />
+          <Property Name="Status_" Type="bit" />
+        </EntityType>
+        <EntityType Name="Work_Order">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Hardware_Id" Type="nvarchar" MaxLength="100" />
+          <Property Name="Work_" Type="varchar" MaxLength="100" />
+          <Property Name="Query_" Type="varchar" MaxLength="250" />
+          <Property Name="Temp_" Type="int" />
+          <Property Name="Result_" Type="bit" />
+          <Property Name="Active_" Type="bit" />
+          <Property Name="Datetime_" Type="datetime" />
+        </EntityType>
+        <EntityContainer Name="admin_WebApp_DatabaseModelStoreContainer">
+          <EntitySet Name="App_Usage" EntityType="Self.App_Usage" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Banned_App" EntityType="Self.Banned_App" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Browser_Histories" EntityType="Self.Browser_Histories" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="cmd_output_" EntityType="Self.cmd_output_" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PC_App_Locations" EntityType="Self.PC_App_Locations" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PC_Details" EntityType="Self.PC_Details" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PC_Running_Apps" EntityType="Self.PC_Running_Apps" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Screen_Capture" EntityType="Self.Screen_Capture" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Screen_Record" EntityType="Self.Screen_Record" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="System_Usage" EntityType="Self.System_Usage" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="User_Details" EntityType="Self.User_Details" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Work_Order" EntityType="Self.Work_Order" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="admin_WebApp_DatabaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="PC_Running_Apps">
+          <Key>
+            <PropertyRef Name="int" />
+          </Key>
+          <Property Name="int" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Hardware_id" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Name_" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Title_" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Screen_Capture">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Hardware_Id" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Img_Url" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="Datetime_" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="Screen_Record">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Hardware_Id" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Video_Url" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Datetime_" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="User_Details">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="User_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="User_Pass" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Surname" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Last_Login" Type="DateTime" Precision="3" />
+          <Property Name="Status_" Type="Boolean" />
+        </EntityType>
+        <EntityContainer Name="admin_WebApp_DatabaseEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="PC_Running_Apps" EntityType="Self.PC_Running_Apps" />
+          <EntitySet Name="Screen_Capture" EntityType="Self.Screen_Capture" />
+          <EntitySet Name="Screen_Record" EntityType="Self.Screen_Record" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+          <EntitySet Name="User_Details" EntityType="Self.User_Details" />
+          <EntitySet Name="Browser_Histories" EntityType="admin_WebApp_DatabaseModel.Browser_Histories" />
+          <EntitySet Name="Banned_App" EntityType="admin_WebApp_DatabaseModel.Banned_App" />
+          <EntitySet Name="PC_App_Locations" EntityType="admin_WebApp_DatabaseModel.PC_App_Locations" />
+          <EntitySet Name="cmd_output_" EntityType="admin_WebApp_DatabaseModel.cmd_output_" />
+          <EntitySet Name="System_Usage" EntityType="admin_WebApp_DatabaseModel.System_Usage" />
+          <EntitySet Name="App_Usage" EntityType="admin_WebApp_DatabaseModel.App_Usage" />
+          <EntitySet Name="PC_Details" EntityType="admin_WebApp_DatabaseModel.PC_Details" />
+          <EntitySet Name="Work_Order" EntityType="admin_WebApp_DatabaseModel.Work_Order" />
+        </EntityContainer>
+        <EntityType Name="Browser_Histories">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Hardware_Id" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Title_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Url_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Sync_Time_" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="Banned_App">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Hardware_Id" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="P_Name" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="Title_" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="Datetime_" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="PC_App_Locations">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Hardware_Id" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="App_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Process_Name_" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Folder_" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Datetime_" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="cmd_output_">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Hardware_Id" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Query_" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="CMD_Output_Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Datetime_" Type="DateTime" Precision="3" />
+          <Property Name="Status_" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="System_Usage">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Hardware_Id" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Cpu" Type="Double" />
+          <Property Name="Memory" Type="Double" />
+          <Property Name="Network_Rec" Type="Double" />
+          <Property Name="Network_Out" Type="Double" />
+          <Property Name="IO_Read" Type="Double" />
+          <Property Name="IO_Write" Type="Double" />
+          <Property Name="Datetime_" Type="DateTime" Precision="3" />
+          <Property Name="Sync" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="App_Usage">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Hardware_Id" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Process_Name" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Process_Windows_Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Cpu" Type="Double" />
+          <Property Name="Memory" Type="Double" />
+          <Property Name="Network_Rec" Type="Double" />
+          <Property Name="Network_Out" Type="Double" />
+          <Property Name="IO_Read" Type="Double" />
+          <Property Name="IO_Write" Type="Double" />
+          <Property Name="Datetime_" Type="DateTime" Precision="3" />
+          <Property Name="Sync" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="PC_Details">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="User_Id" Type="Int32" Nullable="false" />
+          <Property Name="Hardware_Id" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Bg_Url" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="Domain_User_Name" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="Version_" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Memory_Size_Gb" Type="Double" />
+          <Property Name="Processor_Name" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="Motherboard_Info" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="Time_Limit_Minutes" Type="Int32" />
+          <Property Name="Time_" Type="DateTime" Precision="3" />
+          <Property Name="Status_" Type="Boolean" />
+          <Property Name="Last_Sync" Type="DateTime" Precision="3" />
+          <Property Name="Online" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="Work_Order">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Hardware_Id" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Work_" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Query_" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="Temp_" Type="Int32" />
+          <Property Name="Result_" Type="Boolean" />
+          <Property Name="Active_" Type="Boolean" />
+          <Property Name="Datetime_" Type="DateTime" Precision="3" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="admin_WebApp_DatabaseModelStoreContainer" CdmEntityContainer="admin_WebApp_DatabaseEntities">
+          <EntitySetMapping Name="PC_Running_Apps">
+            <EntityTypeMapping TypeName="admin_WebApp_DatabaseModel.PC_Running_Apps">
+              <MappingFragment StoreEntitySet="PC_Running_Apps">
+                <ScalarProperty Name="Title_" ColumnName="Title_" />
+                <ScalarProperty Name="int" ColumnName="int" />
+                <ScalarProperty Name="Hardware_id" ColumnName="Hardware_id" />
+                <ScalarProperty Name="Name_" ColumnName="Name_" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Screen_Capture">
+            <EntityTypeMapping TypeName="admin_WebApp_DatabaseModel.Screen_Capture">
+              <MappingFragment StoreEntitySet="Screen_Capture">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="Hardware_Id" ColumnName="Hardware_Id" />
+                <ScalarProperty Name="Img_Url" ColumnName="Img_Url" />
+                <ScalarProperty Name="Datetime_" ColumnName="Datetime_" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Screen_Record">
+            <EntityTypeMapping TypeName="admin_WebApp_DatabaseModel.Screen_Record">
+              <MappingFragment StoreEntitySet="Screen_Record">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="Hardware_Id" ColumnName="Hardware_Id" />
+                <ScalarProperty Name="Video_Url" ColumnName="Video_Url" />
+                <ScalarProperty Name="Datetime_" ColumnName="Datetime_" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="admin_WebApp_DatabaseModel.sysdiagrams">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="User_Details">
+            <EntityTypeMapping TypeName="admin_WebApp_DatabaseModel.User_Details">
+              <MappingFragment StoreEntitySet="User_Details">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="User_Name" ColumnName="User_Name" />
+                <ScalarProperty Name="User_Pass" ColumnName="User_Pass" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Surname" ColumnName="Surname" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Last_Login" ColumnName="Last_Login" />
+                <ScalarProperty Name="Status_" ColumnName="Status_" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Browser_Histories">
+            <EntityTypeMapping TypeName="admin_WebApp_DatabaseModel.Browser_Histories">
+              <MappingFragment StoreEntitySet="Browser_Histories">
+                <ScalarProperty Name="Sync_Time_" ColumnName="Sync_Time_" />
+                <ScalarProperty Name="Url_" ColumnName="Url_" />
+                <ScalarProperty Name="Title_" ColumnName="Title_" />
+                <ScalarProperty Name="Hardware_Id" ColumnName="Hardware_Id" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Banned_App">
+            <EntityTypeMapping TypeName="admin_WebApp_DatabaseModel.Banned_App">
+              <MappingFragment StoreEntitySet="Banned_App">
+                <ScalarProperty Name="Datetime_" ColumnName="Datetime_" />
+                <ScalarProperty Name="Title_" ColumnName="Title_" />
+                <ScalarProperty Name="P_Name" ColumnName="P_Name" />
+                <ScalarProperty Name="Hardware_Id" ColumnName="Hardware_Id" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PC_App_Locations">
+            <EntityTypeMapping TypeName="admin_WebApp_DatabaseModel.PC_App_Locations">
+              <MappingFragment StoreEntitySet="PC_App_Locations">
+                <ScalarProperty Name="Datetime_" ColumnName="Datetime_" />
+                <ScalarProperty Name="Folder_" ColumnName="Folder_" />
+                <ScalarProperty Name="Process_Name_" ColumnName="Process_Name_" />
+                <ScalarProperty Name="App_Name" ColumnName="App_Name" />
+                <ScalarProperty Name="Hardware_Id" ColumnName="Hardware_Id" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cmd_output_">
+            <EntityTypeMapping TypeName="admin_WebApp_DatabaseModel.cmd_output_">
+              <MappingFragment StoreEntitySet="cmd_output_">
+                <ScalarProperty Name="Status_" ColumnName="Status_" />
+                <ScalarProperty Name="Datetime_" ColumnName="Datetime_" />
+                <ScalarProperty Name="CMD_Output_Text" ColumnName="CMD_Output_Text" />
+                <ScalarProperty Name="Query_" ColumnName="Query_" />
+                <ScalarProperty Name="Hardware_Id" ColumnName="Hardware_Id" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="System_Usage">
+            <EntityTypeMapping TypeName="admin_WebApp_DatabaseModel.System_Usage">
+              <MappingFragment StoreEntitySet="System_Usage">
+                <ScalarProperty Name="Sync" ColumnName="Sync" />
+                <ScalarProperty Name="Datetime_" ColumnName="Datetime_" />
+                <ScalarProperty Name="IO_Write" ColumnName="IO_Write" />
+                <ScalarProperty Name="IO_Read" ColumnName="IO_Read" />
+                <ScalarProperty Name="Network_Out" ColumnName="Network_Out" />
+                <ScalarProperty Name="Network_Rec" ColumnName="Network_Rec" />
+                <ScalarProperty Name="Memory" ColumnName="Memory" />
+                <ScalarProperty Name="Cpu" ColumnName="Cpu" />
+                <ScalarProperty Name="Hardware_Id" ColumnName="Hardware_Id" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="App_Usage">
+            <EntityTypeMapping TypeName="admin_WebApp_DatabaseModel.App_Usage">
+              <MappingFragment StoreEntitySet="App_Usage">
+                <ScalarProperty Name="Sync" ColumnName="Sync" />
+                <ScalarProperty Name="Datetime_" ColumnName="Datetime_" />
+                <ScalarProperty Name="IO_Write" ColumnName="IO_Write" />
+                <ScalarProperty Name="IO_Read" ColumnName="IO_Read" />
+                <ScalarProperty Name="Network_Out" ColumnName="Network_Out" />
+                <ScalarProperty Name="Network_Rec" ColumnName="Network_Rec" />
+                <ScalarProperty Name="Memory" ColumnName="Memory" />
+                <ScalarProperty Name="Cpu" ColumnName="Cpu" />
+                <ScalarProperty Name="Process_Windows_Title" ColumnName="Process_Windows_Title" />
+                <ScalarProperty Name="Process_Name" ColumnName="Process_Name" />
+                <ScalarProperty Name="Hardware_Id" ColumnName="Hardware_Id" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PC_Details">
+            <EntityTypeMapping TypeName="admin_WebApp_DatabaseModel.PC_Details">
+              <MappingFragment StoreEntitySet="PC_Details">
+                <ScalarProperty Name="Online" ColumnName="Online" />
+                <ScalarProperty Name="Last_Sync" ColumnName="Last_Sync" />
+                <ScalarProperty Name="Status_" ColumnName="Status_" />
+                <ScalarProperty Name="Time_" ColumnName="Time_" />
+                <ScalarProperty Name="Time_Limit_Minutes" ColumnName="Time_Limit_Minutes" />
+                <ScalarProperty Name="Motherboard_Info" ColumnName="Motherboard_Info" />
+                <ScalarProperty Name="Processor_Name" ColumnName="Processor_Name" />
+                <ScalarProperty Name="Memory_Size_Gb" ColumnName="Memory_Size_Gb" />
+                <ScalarProperty Name="Version_" ColumnName="Version_" />
+                <ScalarProperty Name="Domain_User_Name" ColumnName="Domain_User_Name" />
+                <ScalarProperty Name="Bg_Url" ColumnName="Bg_Url" />
+                <ScalarProperty Name="Hardware_Id" ColumnName="Hardware_Id" />
+                <ScalarProperty Name="User_Id" ColumnName="User_Id" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Work_Order">
+            <EntityTypeMapping TypeName="admin_WebApp_DatabaseModel.Work_Order">
+              <MappingFragment StoreEntitySet="Work_Order">
+                <ScalarProperty Name="Datetime_" ColumnName="Datetime_" />
+                <ScalarProperty Name="Active_" ColumnName="Active_" />
+                <ScalarProperty Name="Result_" ColumnName="Result_" />
+                <ScalarProperty Name="Temp_" ColumnName="Temp_" />
+                <ScalarProperty Name="Query_" ColumnName="Query_" />
+                <ScalarProperty Name="Work_" ColumnName="Work_" />
+                <ScalarProperty Name="Hardware_Id" ColumnName="Hardware_Id" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
